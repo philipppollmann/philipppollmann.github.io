@@ -24,7 +24,7 @@ function getThemeFromCookie(){
 }
 
 function ShowCookiePopup(){
-    print("Hello World");
+
 }
 
 ShowCookiePopup();
