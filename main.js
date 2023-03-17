@@ -26,5 +26,3 @@ function getThemeFromCookie(){
 function ShowCookiePopup(){
 
 }
-
-ShowCookiePopup();
