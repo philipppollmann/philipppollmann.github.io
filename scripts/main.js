@@ -1,3 +1,19 @@
+// Image Slide Animation
+const bilder = document.querySelectorAll('.imageslider img');
+let verzögerung = 0;
+
+bilder.forEach(bild => {
+    setTimeout(() => {
+        bild.style.transform = 'translateX(0)';
+        bild.style.opacity = '1';
+    }, verzögerung);
+    verzögerung += 100;
+});
+
+
+
+
+//
 const chk = document.getElementById('checkbox');
 
 chk.addEventListener('change', () => {
@@ -26,3 +42,19 @@ function getThemeFromCookie(){
 function ShowCookiePopup(){
 
 }
+
+// Uhr
+const currentTime = () => {
+    const element = document.querySelector("h1")
+
+    let date = new Date();
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    let time = `${hour}:${minutes}${seconds}`;
+    element.innerText = time;
+}
+
+currentTime();
+setInterval(currentTime, 1000);

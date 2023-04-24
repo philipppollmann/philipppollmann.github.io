@@ -23,6 +23,8 @@ nav{
     background-color: #252525;
     height: 80px;
     width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 nav.dark {
@@ -384,6 +386,12 @@ nav ul li a{
     width: auto;
     font-size: 30px;
     height: 50px;
+}
+
+
+.aboutheader{
+    width: 30%;
+    background-color: rebeccapurple;
 }
 
 /* Responsive Website design */
