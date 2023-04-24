@@ -45,14 +45,14 @@ function ShowCookiePopup(){
 
 // Uhr
 const currentTime = () => {
-    const element = document.querySelector("h1")
+    const element = document.querySelector("")
 
     let date = new Date();
     let hour = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
 
-    let time = `${hour}:${minutes}${seconds}`;
+    let time = `${hour}:${minutes}:${seconds}`;
     element.innerText = time;
 }
 
