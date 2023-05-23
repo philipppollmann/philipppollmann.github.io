@@ -5,36 +5,29 @@
     <title>Philipp Pollmann - Dual Student</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/imageslider.css">
+    <link rel="stylesheet" href="../styles/WorkExperience.css">
     <link rel="icon" type="image/x-icon" href="../images/icons8-laptop-codierung-48.png">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="../scripts/main.js"> </script>
+    <script src="../scripts/WorkExperience.js" defer></script>
 </head>
 <body>
-    <section class="workExperience">
-        <ul class="workExperienceList">
-            <li class="workExperienceStep">
-                <span class="workExperience-count">Software internship at INVISION AG</span>
-                <span class="workExperience-description">Beschreibung</span>
-            </li>
-            <li class="workExperienceStep">
-                <span class="workExperience-count">School internship at Ansons KG</span>
-                <span class="workExperience-description">Beschreibung</span>
-            </li>
-            <li class="workExperienceStep">
-                <span class="workExperience-count">School internship at the youth hostel Düsseldorf</span>
-                <span class="workExperience-description">Beschreibung</span>
-            </li>
-            <li class="workExperienceStep">
-                <span class="workExperience-count">	Dual student at Deutsche Telekom - GSUS REM</span>
-                <span class="workExperience-description">Beschreibung</span>
-            </li>
-            <li class="workExperienceStep">
-                <span class="workExperience-count">Dual student at T-Systems International - AWS Powerhouse</span>
-                <span class="workExperience-description">Beschreibung</span>
-            </li>
-        </ul>
-    </section>
-
-
+    <div class="WorkExperience">
+        <div class="WorkExperienceSteps">
+            <span class="WorkExperienceStep active" >2017 01</span> <!--Software internship at INVISION AG-->
+            <span class="WorkExperienceStep">2019 06</span> <!--School internship at Ansons KG-->
+            <span class="WorkExperienceStep">2020 01</span> <!--School internship at the youth hostel Düsseldorf-->
+            <span class="WorkExperienceStep">2020 02-03</span> <!--Temporary job of the youth hostel Düsseldorf-->
+            <span class="WorkExperienceStep">2021 10 - 2023 02</span> <!--Dual student at Deutsche Telekom - GSUS REM-->
+            <span class="WorkExperienceStep">2023 02 - now</span> <!--Dual student at T-Systems International - AWS Powerhouse-->
+            <div class="progress_bar">
+                <span class="indicator"></span>
+            </div>
+        </div>
+        <div class="WorkExperienceButtons">
+            <button class="prev" disabled>Prev</button>
+            <button class="next">Next</button>
+        </div>
+    </div>
 </body>
 </html>
