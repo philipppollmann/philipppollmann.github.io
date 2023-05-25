@@ -6,7 +6,8 @@
 }
 
 .imageslider img{
-    margin: auto;
+    margin-top: 10px;
+
     width: 90px;
     transform: translateX(-100%);
     opacity: 0;
