@@ -3,7 +3,6 @@
 ![TailwindCSS](https://badges.aleen42.com/src/tailwindcss.svg)
 ![Docker](https://badges.aleen42.com/src/docker.svg)
 ![TypeScript](https://badges.aleen42.com/src/typescript.svg)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 # page
 
 ## Project setup
