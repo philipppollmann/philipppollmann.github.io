@@ -1,5 +1,7 @@
 # technologies
 ![Vue Project](https://badges.aleen42.com/src/vue.svg)
+![TailwindCSS](https://badges.aleen42.com/src/tailwindcss.svg)
+![Docker](https://badges.aleen42.com/src/docker.svg)
 # page
 
 ## Project setup
