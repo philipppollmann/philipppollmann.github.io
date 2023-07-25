@@ -2,6 +2,7 @@
 ![Vue Project](https://badges.aleen42.com/src/vue.svg)
 ![TailwindCSS](https://badges.aleen42.com/src/tailwindcss.svg)
 ![Docker](https://badges.aleen42.com/src/docker.svg)
+![TypeScript](https://badges.aleen42.com/src/typescript.svg)
 # page
 
 ## Project setup
