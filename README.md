@@ -1,3 +1,5 @@
+# technologies
+![Vue Project](https://badges.aleen42.com/src/vue.svg)
 # page
 
 ## Project setup
