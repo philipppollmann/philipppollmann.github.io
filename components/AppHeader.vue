@@ -3,7 +3,7 @@
     <nav class="p-5 shadow md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center">
         <span class="text-2xl font-[Poppins] cursor-pointer">
-          <p>Color mode: {{ $colorMode.value }}</p>
+          <p class="text-3xl font-bold">Philipp Pollmann</p>
         </span>
 
         <span class="text-3xl cursor-pointer mx-2 md:hidden block w-12 h-12">
@@ -18,17 +18,17 @@
       ease-in duration-500">
         <li>
           <NuxtLink to="/" class="m-5 h-14 w-60 bg-orange-600 rounded-lg shadow-xl leading-none flex items-center space-x-5">
-            <p class="pl-16">HOME</p>
+            <p class="pl-16 font-bold">HOME</p>
           </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/about" class="m-5 h-14 w-60 bg-orange-600 rounded-lg shadow-xl leading-none flex items-center space-x-5">
-            <p class="pl-16">ABOUT</p>
+            <p class="pl-16 font-bold">ABOUT</p>
           </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/projects" class="m-5 h-14 w-60 bg-orange-600 rounded-lg shadow-xl leading-none flex items-center space-x-5">
-            <p class="pl-16">PROJECTS</p>
+            <p class="pl-16 font-bold">PROJECTS</p>
           </NuxtLink>
         </li>
       </ul>
