@@ -1,5 +1,5 @@
 <template>
-    <h1>About</h1>
+    <CVOverview></CVOverview>
 
 </template>
 
