@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>Hello World</p>
+    <MacWindow></MacWindow>
   </div>
 </template>
