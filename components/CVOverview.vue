@@ -8,20 +8,28 @@
       </div>
       <h1 class="text-gray-400 uppercase tracking-widest text-lg font-bold">Contact</h1>
       <hr class="w-1/6 mb-5">
-      <h1 class="text-gray-400 text-sm">philipp.pollmann@mail.com</h1>
-      <h1 class="text-gray-400 text-sm">+49 170 1983747</h1>
       <h1 class="text-gray-400 text-sm">Düsseldorf, Germany</h1>
       <h1 class="text-blue-400 text-sm">https://philipp.pollmann.rocks</h1>
       <hr class="my-5">
       <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">EDUCATION</h1>
       <hr class="w-1/6 mb-5">
+
       <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">Bachelor of Science, Business Information Systems</h1>
       <h1 class="text-gray-500 text-sm"><span class="italic">FOM</span>, <span
-          class="text-gray-400 font-semibold italic">Cologne</span> / October 2021 - Dezember 2024</h1>
+          class="text-gray-400 font-semibold italic">Cologne, Germany</span> / October 2021 - Dezember 2024</h1>
       <br>
-      <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">Bachelor of Arts</h1>
-      <h1 class="text-gray-500 text-sm"><span class="italic">College Name Here</span>, <span
-          class="text-gray-400 font-semibold italic">London</span> / 2011-2012</h1>
+
+      <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">kaufm. Assistent mit Fachhochschulreife</h1>
+      <h1 class="text-gray-500 text-sm"><span class="italic">Leo-Statz-Berufskolleg</span>, <span
+          class="text-gray-400 font-semibold italic">Düsseldorf, Germany</span> / 2018-2021</h1>
+      <br>
+
+      <h1 class="text-gray-400 text-sm uppercase font-semibold tracking-wider">Fachoberschulreife mit Qualifikation</h1>
+      <h1 class="text-gray-500 text-sm"><span class="italic">Realschule Golzheim</span>, <span
+          class="text-gray-400 font-semibold italic">Düsseldorf, Germany</span> / 2012-2028</h1>
+      <br>
+
+
       <hr class="my-5">
       <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">SKILLS</h1>
       <hr class="w-1/6 mb-5">
@@ -30,6 +38,12 @@
         <li class="text-gray-500 text-sm list-disc ml-4">NuxtJS / VueJS / TailwindCSS</li>
         <li class="text-gray-500 text-sm list-disc ml-4">Microsoft Azure / AWS</li>
         <li class="text-gray-500 text-sm list-disc ml-4">Microsoft Power BI</li>
+      </ul>
+      <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">Languages</h1>
+      <hr class="w-1/6 mb-5">
+      <ul>
+        <li class="text-gray-500 text-sm list-disc ml-4">German</li>
+        <li class="text-gray-500 text-sm list-disc ml-4">English</li>
       </ul>
     </div>
 
@@ -40,7 +54,7 @@
         Associate at ABC company to maximize brand awareness and revenue through integrated marketing
         communications.</h1>
       <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">Work Experience</h1>
-      <h1 class="text-gray-600 font-semibold">Dual Student at Deutsche Telekom</h1>
+      <h1 class="text-gray-600 font-semibold">Dual Student @ Deutsche Telekom</h1>
       <ul class="list-disc ml-5 text-gray-500">
         <li>Dual student @ DTAG GSUS Real Estate Management</li>
           <ul>
@@ -85,6 +99,7 @@
         <li>UI /UX Design</li>
       </ul>
     </div>
+
   </div>
 </template>
 
