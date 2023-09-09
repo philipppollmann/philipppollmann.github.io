@@ -1,11 +1,11 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
 
 </template>
 
-<style scoped lang="scss">
+<script setup lang="ts">
+
+</script>
+
+<style scoped lang="css">
 
 </style>
