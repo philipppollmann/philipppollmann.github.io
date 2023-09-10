@@ -30,15 +30,6 @@
       <br>
 
 
-      <hr class="my-5">
-      <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">SKILLS</h1>
-      <hr class="w-1/6 mb-5">
-      <ul>
-        <li class="text-gray-500 text-sm list-disc ml-4">C# / Kotlin / Python</li>
-        <li class="text-gray-500 text-sm list-disc ml-4">NuxtJS / VueJS / TailwindCSS</li>
-        <li class="text-gray-500 text-sm list-disc ml-4">Microsoft Azure / AWS</li>
-        <li class="text-gray-500 text-sm list-disc ml-4">Microsoft Power BI</li>
-      </ul>
       <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-lg font-bold">Languages</h1>
       <hr class="w-1/6 mb-5">
       <ul>
