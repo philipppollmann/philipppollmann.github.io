@@ -18,7 +18,6 @@ jobs:
       - name: Build Nuxt.ks
         run: num run generate
       - name: Deploy to Github Pages
-        run: npm run deploy
         uses: peadeiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
