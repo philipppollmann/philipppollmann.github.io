@@ -1,26 +1,28 @@
+name: Nuxt.js Build and Deploy
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  build-test-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Set-up Node
-        uses: actions/setup-node@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
-      - run: npm install
-      - run: npm run generate
-      - Name: Deploy
-        uses:
-          crazy-max/ghaction-github-pages@v1
-        with:
-          target_branch: gh-pages
-          build_dir: .output
-        env:
-          GITHUB_TOKEN:
-            ${{ secrets.GITHUB_REPO_TOKEN }}
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Nuxt.js
+        run: npm run generate
+
+      - name: Deploy to Hosting Platform
+        run: npm run deploy
