@@ -46,51 +46,16 @@
         communications.</h1>
       <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">Work Experience</h1>
       <h1 class="text-gray-600 font-semibold">Dual Student @ Deutsche Telekom</h1>
-      <ul class="list-disc ml-5 text-gray-500">
-        <li>Dual student @ DTAG GSUS Real Estate Management</li>
-          <ul>
-            <li class="text-gray-600">July 2023 - Now | Cologne, Germany</li>
-          </ul>
-        <li>Dual Student @ Magyar Telekom Budapest</li>
-          <ul>
-            <li class="text-gray-600">July 2023 - August 2023 | Budapest, Hungary</li>
-          </ul>
+      <ul class="list-inside text-gray-500">
+        <li class="">Dual student @ DTAG GSUS Real Estate Management</li><br>
+        <li>Dual Student @ Magyar Telekom Budapest</li><br>
         <li>Dual student @ T-Systems AWS Powerhouse</li>
-          <ul>
-            <li class="text-gray-600">February 2023 - July 2023 | Düsseldorf, Germany</li>
-          </ul>
         <li>Dual student @ DTAG GSUS Real Estate Management</li>
-        <ul>
-          <li class="text-gray-600">October 2021 - February 2023 | Cologne, Germany</li>
-        </ul>
       </ul>
       <h1 class="text-gray-600 font-semibold mt-3">Intern @ DJH Jugendherberge Düsseldorf</h1>
-      <ul>
-        <li class="text-gray-600">January 2020 | Düsseldorf, Germany</li>
-      </ul>
-      <ul class="list-disc ml-5 text-gray-500">
-        <li>Sales</li>
-      </ul>
       <h1 class="text-gray-600 font-semibold mt-3">Intern @ Anson‘s Herrenhaus KG</h1>
-      <ul>
-        <li class="text-gray-600">July 2019 | Düsseldorf, Germany</li>
-      </ul>
-      <ul class="list-disc ml-5 text-gray-500">
-        <li>Sales</li>
-      </ul>
       <h1 class="text-gray-600 font-semibold mt-3">Intern @ InVision Group AG</h1>
-      <ul>
-        <li class="text-gray-600">January 2017 | Düsseldorf, Germany</li>
-      </ul>
-      <ul class="list-disc ml-5 text-gray-500">
-        <li>HTML, CSS</li>
-        <li>TypeScript</li>
-        <li>Ruby</li>
-        <li>Docker</li>
-        <li>UI /UX Design</li>
-      </ul>
     </div>
-
   </div>
 </template>
 
@@ -101,7 +66,3 @@ export default {
 }
 
 </script>
-
-<style scoped lang="scss">
-
-</style>
