@@ -20,6 +20,7 @@
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" alt="CSSLogo" class="w-32">
+            <p>CSS</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -29,11 +30,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" alt="TailwindLogo" class="w-32">
+            <p>Tailwind CSS</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScriptLogo" class="w-32">
+            <p>JavaScript</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -43,11 +46,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScriptLogo" class="w-32">
+            <p>TypeScript</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="VUELogo" class="w-32">
+            <p>VueJS</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -57,6 +62,7 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://cdn.worldvectorlogo.com/logos/nuxt-2.svg" alt="NuxtLogo" class="w-32 ">
+            <p>NuxtJS</p>
           </td>
         </tr>
         <tr>
@@ -85,12 +91,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left w-auto">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/512px-Logo_C_sharp.svg.png?20221121173824" alt="C#" class="w-32">
-            <p>C#</p>
+            <p>.NET / C#</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://www.svgrepo.com/download/184143/java.svg" alt="JavaLogo" class="w-32">
+            <p>Java</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -100,11 +107,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kotlin_Icon_2021.svg/2048px-Kotlin_Icon_2021.svg.png" alt="KotlinLogo" class="w-32">
+            <p>Kotlin</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="PythonLogo" class="w-32">
+            <p>Python</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -114,6 +123,7 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://www.svgrepo.com/show/303208/php-1-logo.svg" alt="PHPLogo" class="w-32">
+            <p>PHP</p>
           </td>
         </tr>
         <tr>
@@ -148,6 +158,7 @@
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" alt="AWSLogo" class="w-32">
+            <p>Amazon Web Services</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -157,11 +168,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://www.starwindsoftware.com/blog/wp-content/uploads/2022/07/bicep-matthias-blog.png" alt="BicepLogo" class="w-32">
+            <p>Microsoft Bicep</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://www.svgrepo.com/show/354447/terraform-icon.svg" alt="TerraformLogo" class="w-32">
+            <p>HashiCorp Terraform</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -171,11 +184,13 @@
           </td>
           <td class="border-l px-4 py-2 float-left">
             <img src="https://www.svgrepo.com/show/331370/docker.svg" alt="TerraformLogo" class="w-32">
+            <p>Docker</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/2109px-Kubernetes_logo_without_workmark.svg.png" alt="TerraformLogo" class="w-32">
+            <p>Kubernetes</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -206,7 +221,7 @@
           </td>
           <td class="border-l border-b px-4 py-2 float-left w-auto">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/2048px-New_Power_BI_Logo.svg.png" alt="PowerBILogo" class="w-32">
-            <p>Microsoft Azure</p>
+            <p>Microsoft PowerBI</p>
           </td>
         </tr>
         <tr>
