@@ -16,5 +16,8 @@
     "eslint": "^8.48.0",
     "gh-pages": "^4.0.0",
     "nuxt": "^3.7.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }
