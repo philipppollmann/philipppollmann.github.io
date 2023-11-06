@@ -7,21 +7,19 @@
     </div>
     <table>
       <tr>
-        <th>Hi.</th>
-      </tr>
-      <tr>
-        <td>I am Philipp a dual Student at Deutsche Telekom</td>
-      </tr>
-      <tr>
-        <td>I'm studying Business Information Systems in Cologne</td>
+        <h1>Hello there,</h1>
+        <TypingAnimation></TypingAnimation>
       </tr>
     </table>
   </div>
 </template>
 
 <script lang="ts">
+import TypingAnimation from "~/components/TypingAnimation.vue";
+
 export default {
-  name: 'MacWindow'
+  name: 'MacWindow',
+  components: {TypingAnimation}
 }
 
 </script>

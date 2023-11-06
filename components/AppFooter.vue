@@ -1,6 +1,6 @@
 <template>
 
-  <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+  <footer class="bg-blue-950 rounded-lg shadow dark:bg-gray-900 m-4">
     <div class="w-full  mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="/" class="flex items-center mb-4 sm:mb-0">
