@@ -16,16 +16,17 @@ The  website is availablt at [www.philipp.pollmann.rocks](https://philipp.pollma
 ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
-
-## page
-![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
-
 ## IDEs
 ![WebStorm](https://img.shields.io/badge/webstorm-143?style=for-the-badge&logo=webstorm&logoColor=white&color=black)
 
 
 
 ## Table of contents
+
+### 01. Project Structure
+### 02. Installation
+### 03. Development
+### 04. Deployment
 
 ## Project structure
 ``` markdown
@@ -73,6 +74,8 @@ npm test
 ```
 
 ## Deployment
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
 ## Author
 - Philipp Pollmann
