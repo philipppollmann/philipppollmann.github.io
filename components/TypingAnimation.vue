@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span> {{ typedText }}</span>
+    <span>{{ typedText }}<span v-if="showCursor">|</span></span>
   </div>
 </template>
 
@@ -8,15 +8,17 @@
 export default {
   data() {
     return {
-      text: " I am Philipp a dual Student at Deutsche Telekom." +
-          "I'm studying Business Information Systems in Cologne",
+      text: "I am Philipp, a dual student at Deutsche Telekom. " +
+          "I'm studying Business Information Systems in Cologne.",
       typedText: "",
       currentIndex: 0,
       typingSpeed: 100,
+      showCursor: true,
     };
   },
   mounted() {
     this.typeText();
+    this.startCursorBlinking();
   },
   methods: {
     typeText() {
@@ -33,6 +35,11 @@ export default {
           this.typeText();
         }, 2000);
       }
+    },
+    startCursorBlinking() {
+      setInterval(() => {
+        this.showCursor = !this.showCursor;
+      }, 500); // Hier kannst du die Blinkgeschwindigkeit des Cursors anpassen (500 ms = 0,5 Sekunden)
     },
   },
 };
