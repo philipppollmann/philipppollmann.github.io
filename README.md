@@ -78,7 +78,8 @@ npm test
 - Philipp Pollmann
 
 ### `packages`
-1. eslint
-2. @nuxtjs/color-mode
-3. tailwindcss
-4. nuxt-vuetify
+1. [eslint](https://nuxt.com/modules/eslint)
+2. [@nuxtjs/color-mode](https://color-mode.nuxtjs.org/)
+3. [tailwindcss](https://tailwindcss.nuxtjs.org/)
+4. [nuxt-vuetify](https://vuetifyjs.com/en/getting-started/installation/)
+5. 
