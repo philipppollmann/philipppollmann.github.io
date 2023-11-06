@@ -82,4 +82,4 @@ npm test
 2. [@nuxtjs/color-mode](https://color-mode.nuxtjs.org/)
 3. [tailwindcss](https://tailwindcss.nuxtjs.org/)
 4. [nuxt-vuetify](https://vuetifyjs.com/en/getting-started/installation/)
-5. 
+5. [gh-pages](https://github.com/lucpotage/nuxt-github-pages)

@@ -10,6 +10,19 @@ export default defineNuxtConfig({
     components: true,
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/color-mode'
-    ]
+        '@nuxtjs/color-mode',
+        '@invictus.codes/nuxt-vuetify'
+    ],
+    vuetify: {
+        /* vuetify options */
+        vuetifyOptions: {
+        },
+        moduleOptions: {
+            treeshaking: false,
+            useIconCDN: false,
+            styles: true,
+            autoImport: true,
+            useVuetifyLabs: false,
+        }
+    }
 })
