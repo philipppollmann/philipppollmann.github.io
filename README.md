@@ -30,30 +30,27 @@ The  website is availablt at [www.philipp.pollmann.rocks](https://philipp.pollma
 
 ## Project structure
 ``` markdown
-├── .github/
-├── .nuxt/
-├── assets/
-├── components/
-├── layouts/ 
-├── pages/ 
-├── public/
-├── scripts/
-├── server/
-├── styles/
-├── tests/
-├── .eslintrc.js
-├── .gitignore
+├── .github/         GitHub Actions Pipeline 
+├── .nuxt/           
+├── assets/          Images and CSS Files
+├── components/      Vue Components
+├── layouts/         Nuxt3 Layout with Header and Footer from components
+├── pages/           Vue Pages components
+├── public/          favicon and Robots.txt
+├── server/          TypeScript Logic Files for backend
+├── tests/           Unittests
+├── .eslintrc.js     Linter Configuration
+├── .gitignore       ignore non tracked files
 ├── .npmrc
-├── CNAME
-├── Dockerfile
-├── error.vue
-├── index.html
-├── nuxt.config.ts
-├── package.json
+├── CNAME            mapping for philipppollmann.github.io => philipp.pollmann.rocks
+├── Dockerfile       Dockerfile for Nuxt3 App
+├── error.vue        error Page
+├── nuxt.config.ts   Nuxt project configuration
+├── package.json     list of all npm packages
 ├── package-lock.json
-├── README.md
-├── RunDocker.sh
-└── tsconfig.json
+├── README.md        Documentation
+├── RunDocker.sh     Start Dockerfile
+└── tsconfig.json    TypeScript Configuration
 ```
 
 ## Installation
@@ -62,7 +59,6 @@ npm install
 npm install -D @nuxtjs/tailwindcss
 npm install --save-dev jest @vue/test-utils vue-jest babel-jest jest-serializer-vue
 npm install --save-dev @vue/eslint-config-jest
-
 ````
 
 ## Development
@@ -70,12 +66,15 @@ npm install --save-dev @vue/eslint-config-jest
 ```shell
 npm run dev
 npm test
-
 ```
 
 ## Deployment
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
+```shell
+npm run generate
+```
 
 ## Author
 - Philipp Pollmann
