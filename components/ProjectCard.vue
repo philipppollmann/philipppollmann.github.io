@@ -1,16 +1,18 @@
 <template>
-  <div class="m-5 p-4 border-solid rounded-8 bg-gray-400 w-auto shadow-inner">
-    <h1>
-      Meine Überschrift
-    </h1>
-    <slot/>
+  <div class="m-5 bg-gray-500  border-gray-800 border-2 rounded-lg w-48 h-48 overflow-hidden">
+    <img :src="imageUrl" alt="Icon" class="w-40 h-40 object-contain cursor-pointer items-center"/>
+    <p class="text-center">
+      {{ caption }}
+    </p>
   </div>
 </template>
 
-
-<script lang="ts">
+<script>
 export default {
-  name: 'ProjectCard'
-}
-
+  props: {
+    imageUrl: String,
+    caption: String,
+    projectURL: String,
+  },
+};
 </script>
