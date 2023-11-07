@@ -1,4 +1,4 @@
-function GetAge(): number{
+export function GetAge(): number{
     console.log("Calculate the age");
     const today: Date = new Date();
     const birthDay = new Date('2001-11-05');
