@@ -2,7 +2,7 @@
 # Personal Website
 This is my personal website build using the NuxtJS framework. </br>
 Here you will find information about me, my projects and interests. </br>
-The  website is availablt at [www.philipp.pollmann.rocks](https://philipp.pollmann.rocks/)
+The  website is available at [philipp.pollmann.rocks](https://philipp.pollmann.rocks/)
 
 ## technologies
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
