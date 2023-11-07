@@ -66,6 +66,9 @@ npm install --save-dev @vue/eslint-config-jest
 ```shell
 npm run dev
 npm test
+
+docker build -t nuxt-app .
+docker run -p 3000:3000 nuxt-app
 ```
 
 ## Deployment
