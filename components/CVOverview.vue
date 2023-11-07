@@ -40,10 +40,7 @@
 
     <!--Main Element -->
     <div class="bg-white w-7/12 p-10 h-auto">
-      <h1 class="text-gray-500">A resourceful individual with a proven track record in implementing successful
-        marketing strategies, boosting organic traffic, and improving search rankings seeks a position of Marketing
-        Associate at ABC company to maximize brand awareness and revenue through integrated marketing
-        communications.</h1>
+      <h1 class="text-gray-500"></h1>
       <h1 class="font-semibold uppercase tracking-wider my-6 text-gray-500">Work Experience</h1>
       <h1 class="text-gray-600 font-semibold">Dual Student @ Deutsche Telekom</h1>
       <ul class="list-inside text-gray-500">
