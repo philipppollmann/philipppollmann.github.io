@@ -268,7 +268,6 @@
   <div class="w-full max-w-screen-md mx-auto">
 
   </div>
-
 </template>
 
 <script lang="ts">
