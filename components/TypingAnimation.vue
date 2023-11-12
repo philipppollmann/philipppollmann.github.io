@@ -12,7 +12,7 @@ export default {
           "I'm studying Business Information Systems in Cologne.",
       typedText: "",
       currentIndex: 0,
-      typingSpeed: 50,
+      typingSpeed: 25,
       showCursor: true,
     };
   },
@@ -33,7 +33,7 @@ export default {
           this.typedText = "";
           this.currentIndex = 0;
           this.typeText();
-        }, 2000);
+        }, 10000);
       }
     },
     startCursorBlinking() {

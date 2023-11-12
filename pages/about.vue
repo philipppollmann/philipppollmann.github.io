@@ -1,8 +1,9 @@
 <template>
     <CVOverview></CVOverview>
     <CompetencyList></CompetencyList>
-    <SocialMediaLinks></SocialMediaLinks>
     <EmailButton></EmailButton>
+    <CVDownloader></CVDownloader>
+  <SocialMediaLinks></SocialMediaLinks>y
 </template>
 
 <script>
