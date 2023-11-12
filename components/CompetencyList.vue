@@ -80,6 +80,7 @@
     <div class="ml-24">
       <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-xl font-bold">BACKEND</h1>
       <hr class="w-1/6 mb-5">
+      <br/>
       <table class="w-full border-collapse ml-40">
         <thead>
         <tr></tr>
@@ -141,6 +142,7 @@
     <div class="ml-24">
       <h1 class="text-gray-400 mt-2 uppercase tracking-widest text-xl font-bold">DEVOPS / CLOUD</h1>
       <hr class="w-1/6 mb-5">
+      <br/>
       <table class="w-full border-collapse ml-40">
         <thead>
         <tr></tr>
