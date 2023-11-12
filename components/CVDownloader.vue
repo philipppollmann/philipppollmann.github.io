@@ -29,9 +29,9 @@ export default {
       </div>
       <button @click="downloadDocument" class="relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-gray-600">
         <span class="flex items-center space-x-5">
-          <span class="pr-6 text-gray-100"> Labs Release 2023.11</span>
+          <span class="pr-6 text-gray-100">Download my </span>
         </span>
-        <span class="pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200">See whats new &rarr;</span>
+        <span class="pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200">CV &rarr;</span>
       </button>
     </div>
   </div>
