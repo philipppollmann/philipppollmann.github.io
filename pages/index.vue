@@ -1,5 +1,7 @@
 <template>
   <div>
-    <MacWindow></MacWindow>
+    <title>Cover Your Walls AI</title>
+    <AiImageGenerator></AiImageGenerator>
+    <PosterCard></PosterCard>
   </div>
 </template>
