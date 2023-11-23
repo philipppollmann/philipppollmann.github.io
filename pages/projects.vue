@@ -1,4 +1,5 @@
 <template>
+  <title>Philipp Pollmann - Projects</title>
   <ProjectCard
       :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1024px-Nuxt_logo.svg.png'"
       :caption="'Personal Homepage'"

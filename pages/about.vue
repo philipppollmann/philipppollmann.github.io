@@ -1,8 +1,9 @@
 <template>
-    <CVOverview></CVOverview>
-    <CompetencyList></CompetencyList>
-    <EmailButton></EmailButton>
-    <CVDownloader></CVDownloader>
+  <title>Philipp Pollmann - About</title>
+  <CVOverview></CVOverview>
+  <CompetencyList></CompetencyList>
+  <EmailButton></EmailButton>
+  <CVDownloader></CVDownloader>
   <SocialMediaLinks></SocialMediaLinks>y
 </template>
 
