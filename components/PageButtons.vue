@@ -1,34 +1,22 @@
 <template>
   <ul>
     <li>
-      <a href="https://coveryourwalls.de/" class="Button" style="--clr: #ff8800">
+      <NuxtLink to="/" class="Button" style="--clr: #ff8800">
         <span>HOME</span>
         <i></i>
-      </a>
+      </NuxtLink>
     </li>
     <li>
-      <a href="https://coveryourwalls.de/collections/poster" class="Button" style="--clr: #ffd900">
-        <span>Poster</span>
+      <NuxtLink to="/about" class="Button" style="--clr: #ffd900">
+        <span>ABOUT</span>
         <i></i>
-      </a>
+      </NuxtLink>
     </li>
     <li>
-      <a href="https://coveryourwalls.de/pages/uber-uns" class="Button" style="--clr: #ff8800">
-        <span>Über uns</span>
+      <NuxtLink to="/projects" class="Button" style="--clr: #ff8800">
+        <span>PROJECTS</span>
         <i></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://coveryourwalls.de/pages/contact" class="Button" style="--clr: #ff8800">
-        <span>Kontakt</span>
-        <i></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://coveryourwalls.de/pages/faq" class="Button" style="--clr: #ff8800">
-        <span>FAQ</span>
-        <i></i>
-      </a>
+      </NuxtLink>
     </li>
   </ul>
 </template>
