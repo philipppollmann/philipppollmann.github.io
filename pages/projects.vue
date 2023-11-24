@@ -18,6 +18,12 @@
       :project-u-r-l="'https://github.com/philipppollmann/MediaMagnet'"
   />
 
+  <ProjectCard
+      :image-url="'https://cdn.worldvectorlogo.com/logos/kotlin-2.svg'"
+      :caption="'Environment Variable Manager'"
+      :project-u-r-l="'https://github.com/philipppollmann/EnvironmentVariableManager'"
+  />
+
 </template>
 
 <script  lang="ts">
