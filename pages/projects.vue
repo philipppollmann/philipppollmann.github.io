@@ -1,28 +1,30 @@
 <template>
   <title>Philipp Pollmann - Projects</title>
-  <ProjectCard
-      :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1024px-Nuxt_logo.svg.png'"
-      :caption="'Personal Homepage'"
-      :project-u-r-l="'https://github.com/philipppollmann/philipppollmann.github.io'"
-  />
+  <div class="flex">
+    <ProjectCard
+        :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1024px-Nuxt_logo.svg.png'"
+        :caption="'Personal Homepage'"
+        :project-u-r-l="'https://github.com/philipppollmann/philipppollmann.github.io'"
+    />
 
-  <ProjectCard
-      :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png'"
-      :caption="'Customer Support Project'"
-      :project-u-r-l="'https://github.com/philipppollmann/CustomerSupportProject'"
-  />
+    <ProjectCard
+        :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png'"
+        :caption="'Customer Support Project'"
+        :project-u-r-l="'https://github.com/philipppollmann/CustomerSupportProject'"
+    />
 
-  <ProjectCard
-      :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'"
-      :caption="'Media Magnet'"
-      :project-u-r-l="'https://github.com/philipppollmann/MediaMagnet'"
-  />
+    <ProjectCard
+        :image-url="'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png'"
+        :caption="'Media Magnet'"
+        :project-u-r-l="'https://github.com/philipppollmann/MediaMagnet'"
+    />
 
-  <ProjectCard
-      :image-url="'https://cdn.worldvectorlogo.com/logos/kotlin-2.svg'"
-      :caption="'Environment Variable Manager'"
-      :project-u-r-l="'https://github.com/philipppollmann/EnvironmentVariableManager'"
-  />
+    <ProjectCard
+        :image-url="'https://cdn.worldvectorlogo.com/logos/kotlin-2.svg'"
+        :caption="'Environment Variable Manager'"
+        :project-u-r-l="'https://github.com/philipppollmann/EnvironmentVariableManager'"
+    />
+  </div>
 
 </template>
 
