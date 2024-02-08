@@ -2,7 +2,7 @@
   <div class="bg-green-400">
     <nav class="p-5 shadow md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center">
-        <img src="../assets/img/IMG_8048.png" alt="Logo" class="w-24 mr-6">
+        <img src="../assets/img/IMG_8048.png" alt="Logo" class="w-20 mr-6">
         <span class="text-2xl font-[Poppins] cursor-pointer">
           <a class="text-3xl font-bold" href="/">Philipp Pollmann</a>
         </span>

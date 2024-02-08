@@ -91,14 +91,14 @@
           <td class="border-r px-4 py-2">
           </td>
           <td class="border-l px-4 py-2 float-left w-auto">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/512px-Logo_C_sharp.svg.png?20221121173824" alt="C#" class="w-32">
-            <p>.NET / C#</p>
+            <img src="https://www.svgrepo.com/show/373635/go-gopher.svg" alt="C#" class="w-32">
+            <p>GoLang</p>
           </td>
         </tr>
         <tr>
           <td class="border-r px-4 py-2 float-right">
-            <img src="https://www.svgrepo.com/download/184143/java.svg" alt="JavaLogo" class="w-32">
-            <p>Java</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/512px-Logo_C_sharp.svg.png?20221121173824" alt="C#" class="w-32">
+            <p>C#</p>
           </td>
           <td class="border-t px-4 py-2">
           </td>
@@ -117,14 +117,6 @@
             <p>Python</p>
           </td>
           <td class="border-t px-4 py-2">
-          </td>
-        </tr>
-        <tr>
-          <td class="border-t px-4 py-2">
-          </td>
-          <td class="border-l px-4 py-2 float-left">
-            <img src="https://www.svgrepo.com/show/303208/php-1-logo.svg" alt="PHPLogo" class="w-32">
-            <p>PHP</p>
           </td>
         </tr>
         <tr>
