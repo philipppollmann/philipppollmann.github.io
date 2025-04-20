@@ -20,25 +20,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "18"
           cache: "npm"
+
       - name: Install dependencies
+        run: npm ci
+
+      - name: List package.json scripts
+        run: npm run | grep -E "^  " || echo "No scripts found"
+
+      - name: Build Nuxt site
+        run: npm run build
+
+      - name: Check output directory
         run: |
-          npm install
-          npm install -D @nuxtjs/tailwindcss
-          npm list
-      - name: Static HTML export with Nuxt
-        run: |
-          npm run generate
-          cd .output/public
-          ls -als
+          ls -la
+          find . -name ".output" -type d -exec ls -la {} \; || echo ".output directory not found"
+          find . -name "dist" -type d -exec ls -la {} \; || echo "dist directory not found"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
+          # Fallback if .output/public doesn't exist
+          if-no-files-found: error
 
   # Deployment job
   deploy:
