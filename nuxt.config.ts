@@ -1,10 +1,12 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-
-
 export default defineNuxtConfig({
     app: {
         baseURL: '/',
-        buildAssetsDir: 'assets'
+        buildAssetsDir: 'assets',
+        head: {
+            link: [
+                { rel: 'icon', type: 'image/png', href: '/P-Logo.png' }
+            ]
+        }
     },
     devtools: { enabled: true },
     components: true,
@@ -13,10 +15,16 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         '@invictus.codes/nuxt-vuetify'
     ],
+    vite: {
+        server: {
+            hmr: {
+                protocol: 'ws',
+                host: 'localhost'
+            }
+        }
+    },
     vuetify: {
-        /* vuetify options */
-        vuetifyOptions: {
-        },
+        vuetifyOptions: {},
         moduleOptions: {
             treeshaking: false,
             useIconCDN: false,
