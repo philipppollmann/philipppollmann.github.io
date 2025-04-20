@@ -3,5 +3,6 @@ export interface Skill {
     description: string;
     icon: string;
     gradient: string;
+    orbGradient: string;
     abilities: Ability[];
 }

@@ -34,3 +34,13 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.relative {
+  position: relative;
+}
+.rounded-xl {
+  border-radius: 1rem;
+}
+/* Weitere gültige CSS-Regeln */
+</style>

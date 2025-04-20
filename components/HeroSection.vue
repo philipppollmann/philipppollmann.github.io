@@ -5,10 +5,10 @@
         Philipp Pollmann
       </h1>
       <p class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">
-        Entwickler. Designer. Innovator.
+        DevOps Engineer at <span class="font-bold text-magenta">Deutsche Telekom AG</span> in Real Estate and Procurement
       </p>
       <button class="bg-white text-black rounded-full px-8 py-3 font-medium hover:bg-gray-200 transition-colors animate-fade-in-delay-2">
-        Mehr entdecken
+        See more
       </button>
     </div>
   </section>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style scoped>
+.text-magenta {
+  color: #E20074;
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out;
 }

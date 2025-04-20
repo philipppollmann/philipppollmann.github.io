@@ -6,19 +6,20 @@
         Du hast ein Projekt oder eine Idee? Kontaktiere mich und lass uns darüber sprechen.
       </p>
       <div class="flex flex-col md:flex-row justify-center gap-4">
-        <a href="mailto:contact@example.com" class="bg-white text-black rounded-full px-8 py-3 font-medium hover:bg-gray-200 transition-colors">
-          Email senden
-        </a>
-        <a href="#" class="bg-transparent border border-white text-white rounded-full px-8 py-3 font-medium hover:bg-white/10 transition-colors">
-          LinkedIn Profil
-        </a>
+        <MailButton/>
+        <LinkedInButton/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import LinkedInButton from "~/components/LinkeInButton.vue";
+
 export default {
-  name: 'ContactSection'
+  name: 'ContactSection',
+  components: {
+    LinkedInButton,
+  }
 }
 </script>

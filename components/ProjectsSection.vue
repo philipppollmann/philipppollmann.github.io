@@ -37,18 +37,18 @@ export default {
   data() {
     return {
       featuredProject: {
-        title: 'Projekt Showcase',
+        title: 'Bachelor-Thesis',
         description: 'Eine innovative Plattform, die modernste Web-Technologien nutzt, um ein nahtloses Benutzererlebnis zu schaffen. Das Projekt demonstriert meine Fähigkeiten in Frontend- und Backend-Entwicklung.',
         gradient: 'from-indigo-500 to-purple-600'
       },
       projects: [
         {
-          title: 'Projekt Alpha',
+          title: 'Homepage',
           category: 'Frontend-Entwicklung, UI/UX',
           gradient: 'from-red-500 to-orange-500'
         },
         {
-          title: 'Projekt Beta',
+          title: 'Smart-Home-Monitoring',
           category: 'Backend-Entwicklung, API',
           gradient: 'from-green-500 to-teal-500'
         },
