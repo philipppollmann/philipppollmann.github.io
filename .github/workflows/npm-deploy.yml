@@ -1,82 +1,40 @@
 name: Deploy to GitHub Pages
-
 on:
-  workflow_run:
-    workflows: ["NPM Build"]
-    types:
-      - completed
-    branches: [main]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-  actions: read
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
+  push:
+    branches:
+      - main
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
         with:
-          node-version: "18"
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Nuxt site
-        run: npm run generate
-
-      - name: Detailed Directory Structure
-        run: |
-          echo "Complete project directory structure:"
-          find . -type d -not -path "*/node_modules/*" | sort
-          
-          echo "Root directory contents:"
-          ls -la
-          
-          echo ".output directory contents:"
-          ls -la .output || echo ".output not found"
-          
-          if [ -d ".output" ]; then
-            echo ".output/public contents:"
-            ls -la .output/public || echo ".output/public not found"
-          fi
-          
-          echo "server directory contents:"
-          ls -la server || echo "server not found"
-          
-          if [ -d "server" ]; then
-            echo "server/.output contents:"
-            ls -la server/.output || echo "server/.output not found"
-            
-            if [ -d "server/.output" ]; then
-              echo "server/.output/public contents:"
-              ls -la server/.output/public || echo "server/.output/public not found"
-            fi
-          fi
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-
+          node-version: "20"
+      # Pick your own package manager and build script
+      - run: npm install
+      - run: npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
-          retention-days: 1
-
+  # Deployment job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    # Deploy to the github_pages environment
+    environment:
+      name: github_pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
