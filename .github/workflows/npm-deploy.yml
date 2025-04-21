@@ -42,8 +42,8 @@ jobs:
         run: |
           echo "Inhalte des aktuellen Verzeichnisses:"
           ls -la
-          echo "Inhalte des dist-Verzeichnisses:"
-          ls -la dist || echo "dist nicht gefunden"
+          echo "Inhalte des .output/public-Verzeichnisses:"
+          ls -la .output/public || echo ".output/public nicht gefunden"
 
       - name: Setup Pages
         id: pages
@@ -52,12 +52,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
           retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-        with:
-          token: ${{ github.token }}
-          artifact_name: "github-pages"
