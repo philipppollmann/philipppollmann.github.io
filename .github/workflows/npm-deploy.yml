@@ -42,8 +42,10 @@ jobs:
         run: |
           echo "Inhalte des aktuellen Verzeichnisses:"
           ls -la
-          echo "Inhalte des .output/public-Verzeichnisses:"
-          ls -la .output/public || echo ".output/public nicht gefunden"
+          echo "Inhalte des .output Verzeichnisses:"
+          ls -la .output || echo ".output nicht gefunden"
+          echo "Inhalte des dist Verzeichnisses:"
+          ls -la dist || echo "dist nicht gefunden"
 
       - name: Setup Pages
         id: pages

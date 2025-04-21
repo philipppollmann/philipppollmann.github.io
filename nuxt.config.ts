@@ -8,6 +8,11 @@ export default defineNuxtConfig({
             ]
         }
     },
+    nitro: {
+        output: {
+            publicDir: '.output/public'
+        }
+    },
     devtools: { enabled: true },
     components: true,
     modules: [
