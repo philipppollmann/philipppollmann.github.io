@@ -38,14 +38,34 @@ jobs:
       - name: Build Nuxt site
         run: npm run generate
 
-      - name: Debug Output Directory
+      - name: Detailed Directory Structure
         run: |
-          echo "Inhalte des aktuellen Verzeichnisses:"
+          echo "Complete project directory structure:"
+          find . -type d -not -path "*/node_modules/*" | sort
+          
+          echo "Root directory contents:"
           ls -la
-          echo "Inhalte des .output Verzeichnisses:"
-          ls -la .output || echo ".output nicht gefunden"
-          echo "Inhalte des dist Verzeichnisses:"
-          ls -la dist || echo "dist nicht gefunden"
+          
+          echo ".output directory contents:"
+          ls -la .output || echo ".output not found"
+          
+          if [ -d ".output" ]; then
+            echo ".output/public contents:"
+            ls -la .output/public || echo ".output/public not found"
+          fi
+          
+          echo "server directory contents:"
+          ls -la server || echo "server not found"
+          
+          if [ -d "server" ]; then
+            echo "server/.output contents:"
+            ls -la server/.output || echo "server/.output not found"
+            
+            if [ -d "server/.output" ]; then
+              echo "server/.output/public contents:"
+              ls -la server/.output/public || echo "server/.output/public not found"
+            fi
+          fi
 
       - name: Setup Pages
         id: pages
@@ -54,7 +74,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./server/.output/public
+          path: ./.output/public
           retention-days: 1
 
       - name: Deploy to GitHub Pages

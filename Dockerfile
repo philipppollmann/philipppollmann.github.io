@@ -9,15 +9,10 @@ RUN npm install
 COPY . .
 RUN npm run generate
 
-RUN ls -la /app
-RUN find /app -type d -name "public" -o -name "dist"
-
-
 FROM nginx:alpine
 LABEL authors="philipppollmann"
 
-COPY --from=builder /app/.output/public /usr/share/nginx/html
-
+COPY --from=builder /app/server/.output/public /usr/share/nginx/html
 
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 
