@@ -1,15 +1,17 @@
 name: Build und Push Docker-Image
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_run:
+    workflows: ["NPM Test"]
+    types:
+      - completed
+    branches: [main]
   workflow_dispatch:
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
