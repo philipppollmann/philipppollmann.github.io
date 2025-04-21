@@ -12,6 +12,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: "pages"
@@ -37,15 +38,26 @@ jobs:
       - name: Build Nuxt site
         run: npm run generate
 
+      - name: Debug Output Directory
+        run: |
+          echo "Inhalte des aktuellen Verzeichnisses:"
+          ls -la
+          echo "Inhalte des dist-Verzeichnisses:"
+          ls -la dist || echo "dist nicht gefunden"
+
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-          if-no-files-found: error
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          token: ${{ github.token }}
+          artifact_name: "github-pages"
