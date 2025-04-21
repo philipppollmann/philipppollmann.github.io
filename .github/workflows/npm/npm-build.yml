@@ -1,0 +1,40 @@
+name: NPM Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Static Site
+        run: npm run generate
+
+      - name: Verify Build Output
+        run: |
+          ls -la
+          find . -name "dist" -type d -exec ls -la {} \; || echo "dist directory not found"
+          echo "NPM generate completed successfully"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-files
+          path: ./dist
+          if-no-files-found: error
