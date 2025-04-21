@@ -1,0 +1,6 @@
+apiVersion: v2
+name: philipppollmann.github.io frontend
+description: A chart for philipppollmann.github.io website
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
