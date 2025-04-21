@@ -2,9 +2,9 @@ name: NPM Build
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -30,11 +30,4 @@ jobs:
         run: |
           ls -la
           find . -name "dist" -type d -exec ls -la {} \; || echo "dist directory not found"
-          echo "NPM generate completed successfully"
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: dist-files
-          path: ./dist
-          if-no-files-found: error
+          echo "NPM generate wurde erfolgreich ausgeführt"
