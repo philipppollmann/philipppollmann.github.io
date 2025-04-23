@@ -24,7 +24,8 @@
         </div>
 
         <div class="timeline-items space-y-16">
-          <!-- Timeline item -->
+
+          <!-- GSUS DevOps Engineer-->
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
@@ -63,13 +64,105 @@
             </ul>
           </div>
 
-          <!-- Timeline item -->
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
-              <h4 class="text-xl font-medium text-white">Dual Student</h4>
+              <h4 class="text-xl font-medium text-white">Dual Student at GSUS REM and Procurement</h4>
               <span class="text-white text-lg">Deutsche Telekom AG</span>
-              <span class="text-white">2018 - 2021</span>
+              <span class="text-white">Jul 2023 - Dec 2024</span>
+            </div>
+            <p class="mt-2 text-white">
+              Development of microservices and deployment on cloud platforms
+            </p>
+            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Microsoft Azure
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Python
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Kubernetes
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Docker
+              </li>
+            </ul>
+          </div>
+
+          <!-- Auslandseinsatz -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">Dual Student at Magyar Telekom Budapest</h4>
+              <span class="text-white text-lg">Deutsche Telekom AG</span>
+              <span class="text-white">Jul 2023 - Aug 2023</span>
+            </div>
+            <p class="mt-2 text-white">
+              Development of microservices and deployment on cloud platforms
+            </p>
+            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                IoT Sensor Configuration
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Python
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Terraform
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Compliance & Security
+              </li>
+            </ul>
+          </div>
+
+          <!-- Betriebseinsatzwechsel -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">Dual Student at AWS Powerhouse</h4>
+              <span class="text-white text-lg">T-Systems GmbH</span>
+              <span class="text-white">Feb 2023 - Jul 2023</span>
+            </div>
+            <p class="mt-2 text-white">
+              Development of microservices and deployment on cloud platforms
+            </p>
+            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                AWS
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Terraform
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Python & Django
+              </li>
+              <li class="text-white flex items-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
+                Docker
+              </li>
+            </ul>
+          </div>
+
+          <!-- First GSUS Part -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">Dual Student at GSUS Real Estate Management</h4>
+              <span class="text-white text-lg">Deutsche Telekom AG</span>
+              <span class="text-white">Oct 2021 - Feb 2023</span>
             </div>
             <p class="mt-2 text-white">
               Development of microservices and deployment on cloud platforms
@@ -85,11 +178,11 @@
               </li>
               <li class="text-white flex items-center">
                 <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                AWS & Azure (Bicep)
+                Power Bi
               </li>
               <li class="text-white flex items-center">
                 <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                  Docker
+                  Microsoft Azure
               </li>
             </ul>
           </div>
@@ -100,7 +193,7 @@
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
               <h4 class="text-xl font-medium text-white">Internship</h4>
               <span class="text-white text-lg">PeopleWare (formerly Invision AG)</span>
-              <span class="text-white">2018 - 2021</span>
+              <span class="text-white">Jan 2017</span>
             </div>
             <p class="mt-2 text-white">
               Basic understanding of programming languages like ruby and TypeScript
@@ -143,7 +236,7 @@
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
               <h4 class="text-xl font-medium text-white">Bachelor in Business Informatics</h4>
               <span class="text-white text-lg">FOM University of Applied Sciences Cologne, Germany</span>
-              <span class="text-white">2016 - 2018</span>
+              <span class="text-white">Oct 2021 - Dec 2024</span>
             </div>
             <p class="mt-2 text-white">
               Focus: Artificial intelligence, software development, project management and cloud infrastructure
@@ -156,7 +249,7 @@
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
               <h4 class="text-xl font-medium text-white">A-levels</h4>
               <span class="text-white text-lg">Leo-Statz-Berufskolleg Düsseldorf, Germany</span>
-              <span class="text-white">2012 - 2016</span>
+              <span class="text-white">Aug 2018 - Jul 2023</span>
             </div>
             <p class="mt-2 text-white">
               Focus: Web development with web design using Photoshop and balance sheets
@@ -188,7 +281,7 @@
       <!-- Download CV button -->
       <div class="mt-16 text-center">
         <button class="cv-download-button group relative overflow-hidden rounded-full bg-white px-6 py-3 text-black transition-all duration-300">
-          <span class="relative z-10">Lebenslauf herunterladen</span>
+          <span class="relative z-10">Download CV</span>
           <span class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
         </button>
       </div>
@@ -198,7 +291,7 @@
 
 <script>
 export default {
-  name: 'AppleStyleCV',
+  name: 'CV',
   mounted() {
     this.initAnimations();
   },

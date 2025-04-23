@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="py-16 px-4 bg-black">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-12 text-center">Projekte</h2>
+      <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
 
       <!-- Featured Project -->
       <FeaturedProject
@@ -38,24 +38,19 @@ export default {
     return {
       featuredProject: {
         title: 'Bachelor-Thesis',
-        description: 'Eine innovative Plattform, die modernste Web-Technologien nutzt, um ein nahtloses Benutzererlebnis zu schaffen. Das Projekt demonstriert meine Fähigkeiten in Frontend- und Backend-Entwicklung.',
+        description: 'A comparison of multiple regression algorithms for predicting office utilisation of Deutsche Telekom buildings. The model was deployed in a Docker container using FastAPI. The CRISP-DM process was used.',
         gradient: 'from-indigo-500 to-purple-600'
       },
       projects: [
         {
           title: 'Homepage',
-          category: 'Frontend-Entwicklung, UI/UX',
+          category: 'A Nuxt application used to showcase my projects and skills.',
           gradient: 'from-red-500 to-orange-500'
         },
         {
           title: 'Smart-Home-Monitoring',
-          category: 'Backend-Entwicklung, API',
+          category: 'A terraform configuration for monitoring smart home devices using InfluxDB, Grafana and more services in a kubernetes cluster.',
           gradient: 'from-green-500 to-teal-500'
-        },
-        {
-          title: 'Projekt Gamma',
-          category: 'Mobile App, Cross-Platform',
-          gradient: 'from-blue-500 to-violet-500'
         }
       ]
     }

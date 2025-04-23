@@ -1,3 +1,5 @@
+import type {Ability} from "~/model/Ability";
+
 export interface Skill {
     title: string;
     description: string;
