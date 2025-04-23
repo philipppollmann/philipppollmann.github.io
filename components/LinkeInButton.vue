@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     handleClick() {
-      // Replace with your LinkedIn profile URL
       window.open('https://de.linkedin.com/in/philipp-pollmann-5a3754206', '_blank');
     }
   }

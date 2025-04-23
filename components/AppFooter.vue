@@ -13,15 +13,15 @@
           <h3 class="text-xl font-semibold text-white mb-4">Links</h3>
           <ul class="space-y-2">
             <li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Über mich</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About me</a></li>
             <li><a href="#cv" class="text-gray-400 hover:text-white transition-colors">CV</a></li>
             <li><a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a></li>
-            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projekte</a></li>
-            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Kontakt</a></li>
+            <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="text-xl font-semibold text-white mb-4">Kontakt</h3>
+          <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
           <ul class="space-y-2">
             <li>
               <a href="https://github.com/philipppollmann" target="_blank" rel="noopener noreferrer"

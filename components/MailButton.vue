@@ -13,7 +13,7 @@
         <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         <path d="M22 7L13.03 13.2C12.4 13.6 11.6 13.6 10.97 13.2L2 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
-      <span class="button-text">E-Mail senden</span>
+      <span class="button-text">Send me a Mail</span>
     </div>
     <div class="button-glow"></div>
   </button>
