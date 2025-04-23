@@ -1,6 +1,5 @@
 <template>
   <section class="cv-section relative overflow-hidden bg-black text-white py-24 px-6">
-    <!-- Background elements -->
     <div class="absolute inset-0">
       <div class="grid-overlay"></div>
       <div class="gradient-sphere gradient-sphere-1"></div>
@@ -8,7 +7,6 @@
     </div>
 
     <div class="max-w-5xl mx-auto relative z-10">
-      <!-- Header with animated text reveal -->
       <div class="mb-16 overflow-hidden">
         <h2 class="text-5xl font-bold tracking-tight text-reveal text-white">CV</h2>
         <p class="mt-4 text-xl text-white max-w-2xl text-reveal-delayed">
@@ -16,7 +14,6 @@
         </p>
       </div>
 
-      <!-- Timeline component -->
       <div class="timeline-container mb-24">
         <div class="timeline-header mb-10">
           <h3 class="text-2xl font-semibold text-white">Professional experience</h3>
@@ -231,20 +228,73 @@
         </div>
       </div>
 
-      <!-- Education section and rest of the component remain unchanged -->
       <!-- Education section -->
       <div class="education-container">
-        <!-- ... Rest of the content ... -->
+        <div class="timeline-header mb-10">
+          <h3 class="text-2xl font-semibold text-white">Education</h3>
+          <div class="h-px w-full bg-gradient-to-r from-white to-transparent mt-2"></div>
+        </div>
+
+        <div class="timeline-items space-y-16">
+          <!-- Education item -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#009983]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">Bachelor in Business Informatics</h4>
+              <span class="text-white text-lg">FOM University of Applied Sciences Cologne, Germany</span>
+              <span class="text-white">Oct 2021 - Dec 2024</span>
+            </div>
+            <p class="mt-2 text-white">
+              Focus: Artificial intelligence, software development, project management and cloud infrastructure
+            </p>
+          </div>
+
+          <!-- Education item -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#eb6a09]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">A-levels</h4>
+              <span class="text-white text-lg">Leo-Statz-Berufskolleg Düsseldorf, Germany</span>
+              <span class="text-white">Aug 2018 - Jul 2023</span>
+            </div>
+            <p class="mt-2 text-white">
+              Focus: Web development with web design using Photoshop and balance sheets
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Certifications section -->
       <div class="certification-container mt-24">
-        <!-- ... Rest of the content ... -->
+        <div class="timeline-header mb-10">
+          <h3 class="text-2xl font-semibold text-white">Certifications</h3>
+          <div class="h-px w-full bg-gradient-to-r from-white to-transparent mt-2"></div>
+        </div>
+        <div class="timeline-items space-y-16">
+          <!-- Certification item -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#ff9900]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">AWS Certified Cloud Practitioner</h4>
+            </div>
+            <p class="mt-2 text-white">
+              Basic understanding of the AWS cloud and its services. Knowledge of cloud security, architecture and pricing.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Download CV button -->
       <div class="mt-16 text-center">
-        <!-- ... Rest of the content ... -->
+        <a href="/CV_Philipp_Pollmann.pdf" download class="cv-download-button group relative overflow-hidden rounded-full bg-white px-6 py-3 text-black transition-all duration-300 inline-block hover:scale-105">
+          <span class="relative z-10 flex items-center justify-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+            Download CV
+          </span>
+          <span class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+        </a>
       </div>
     </div>
   </section>
@@ -258,7 +308,6 @@ export default {
   },
   methods: {
     initAnimations() {
-      // Add intersection observer to handle reveal animations
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -266,9 +315,8 @@ export default {
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.1 });
+      }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
-      // Observe all elements with reveal classes
       document.querySelectorAll('.text-reveal, .text-reveal-delayed, .reveal-item').forEach(el => {
         observer.observe(el);
       });
@@ -278,13 +326,129 @@ export default {
 </script>
 
 <style scoped>
-.cv-section * {
-  color: white !important; /* Force all text within the CV section to be white */
+:root {
+  --primary: #e20074;
+  --secondary: #8d00ff;
+  --accent: #009983;
 }
 
-/* ... Rest of the styles ... */
+.cv-section * {
+  color: white !important; /* Alle Texte im CV-Bereich weiß machen */
+}
 
-/* Add new styles for subitems */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.gradient-sphere {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+.gradient-sphere-1 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.6) 0%, rgba(17, 24, 39, 0) 70%);
+  top: -100px;
+  right: -100px;
+  animation: float 20s infinite alternate ease-in-out;
+}
+
+.gradient-sphere-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.6) 0%, rgba(17, 24, 39, 0) 70%);
+  bottom: -100px;
+  left: -100px;
+  animation: float 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(40px, -40px);
+  }
+  100% {
+    transform: translate(-40px, 40px);
+  }
+}
+
+.text-reveal, .text-reveal-delayed, .reveal-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.text-reveal-delayed {
+  transition-delay: 0.2s;
+}
+
+.text-reveal.revealed, .text-reveal-delayed.revealed, .reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cv-download-button {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.5);
+}
+
+.cv-download-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(147, 51, 234, 0.5);
+}
+
+.cv-download-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-45deg);
+  transition: left 0.5s ease;
+}
+
+.cv-download-button:hover::before {
+  left: 100%;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 1.5px;
+  top: 10px;
+  bottom: -32px;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.timeline-item:last-child::before {
+  content: none;
+}
+
 .timeline-subitem::before {
   content: '';
   position: absolute;
@@ -299,7 +463,6 @@ export default {
   content: none;
 }
 
-/* Connector line from parent to first child */
 .timeline-item + .timeline-subitem::after {
   content: '';
   position: absolute;
@@ -308,5 +471,55 @@ export default {
   width: 7px;
   height: 1px;
   background: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 640px) {
+  .timeline-subitem {
+    padding-left: 12px;
+    margin-left: 4px;
+  }
+
+  .timeline-subitem::before {
+    left: 6px;
+  }
+
+  .timeline-subitem span.absolute {
+    left: 6px;
+  }
+
+  .timeline-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .timeline-item h4, .timeline-subitem h4 {
+    font-size: 1.1rem;
+  }
+
+  .cv-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.timeline-item, .timeline-subitem {
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover, .timeline-subitem:hover {
+  transform: translateX(5px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 </style>
