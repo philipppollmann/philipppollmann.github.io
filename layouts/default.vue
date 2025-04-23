@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <AppHeader></AppHeader>
-        <slot />
-        <AppFooter></AppFooter>
-    </div>
+  <div>
+    <AppHeader />
+    <slot />
+    <AppFooter />
+  </div>
 </template>
 
 <script>

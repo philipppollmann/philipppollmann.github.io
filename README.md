@@ -32,7 +32,6 @@ The  website is available at [philipp.pollmann.rocks](https://philipp.pollmann.r
 ├── public/          favicon and Robots.txt
 ├── server/          TypeScript Logic Files for backend
 ├── tests/           Unittests
-├── .eslintrc.js     Linter Configuration
 ├── .gitignore       ignore non tracked files
 ├── .npmrc
 ├── CNAME            mapping for philipppollmann.github.io => philipp.pollmann.rocks
