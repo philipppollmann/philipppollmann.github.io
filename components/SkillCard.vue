@@ -1,9 +1,12 @@
 <template>
   <div class="rounded-3xl overflow-hidden relative group skill-card" ref="skillCard">
-    <!-- Hintergrund mit Verlauf -->
-    <div :class="`absolute inset-0 bg-gradient-to-r ${gradient} opacity-90`"></div>
+    <div class="absolute inset-0 bg-gradient-to-br opacity-90" :class="gradient"></div>
 
-    <!-- Inhalt -->
+    <div class="absolute inset-0 z-0 overflow-hidden opacity-40" v-if="orbGradient">
+      <div class="absolute top-0 right-0 left-0 h-40 blur-xl"
+           :style="`background: ${orbGradient}`"></div>
+    </div>
+
     <div class="relative p-8 z-10">
       <div class="flex items-start justify-between">
         <div>
@@ -14,7 +17,6 @@
         </div>
         <div class="text-4xl text-white card-element" style="--delay: 0.15s">{{ icon }}</div>
       </div>
-      <!-- Animated Bar -->
       <div class="mt-8 space-y-2">
         <div
             v-for="(ability, index) in abilities"
@@ -60,6 +62,10 @@ export default {
     gradient: {
       type: String,
       required: true
+    },
+    orbGradient: {
+      type: String,
+      default: null
     },
     abilities: {
       type: Array,

@@ -11,6 +11,7 @@
             :description="skill.description"
             :icon="skill.icon"
             :gradient="skill.gradient"
+            :orbGradient="skill.orbGradient"
             :abilities="skill.abilities"
         />
       </div>
