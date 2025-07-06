@@ -15,7 +15,7 @@
               <span class="text-white font-semibold">Deutsche Telekom AG</span> in the
               <span class="text-white font-semibold">Real Estate & Procurement</span> department.
               In my role as <span class="text-white font-semibold">DevOps Engineer</span> and
-              <span class="text-white font-semibold">Team Lead</span> of our DevOps team, I am responsible for the
+              <span class="text-white font-semibold">Product Owner</span> and I am responsible for the
               development and operation of an <span class="text-white font-semibold">Azure-based Kubernetes platform</span>.
             </p>
             <p>
