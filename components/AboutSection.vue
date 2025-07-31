@@ -7,7 +7,11 @@
       <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 shadow-xl ring-1 ring-white/10">
         <div class="flex flex-col md:flex-row items-center gap-10">
           <div class="md:w-1/3 flex justify-center">
-            <div class="w-48 h-48 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 shadow-lg shadow-purple-500/30 ring-2 ring-white/10"></div>
+            <img
+                src="https://avatars.githubusercontent.com/u/17802232?v=4"
+                alt="Philipp Pollmann"
+                class="w-48 h-48 rounded-full object-cover shadow-lg ring-2 ring-white/10"
+            />
           </div>
           <div class="md:w-2/3 text-gray-300 text-lg space-y-5 leading-relaxed">
             <p>
