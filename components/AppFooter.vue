@@ -5,7 +5,7 @@
         <div>
           <h3 class="text-xl font-semibold text-white mb-4">Philipp Pollmann</h3>
           <p class="text-gray-400">
-            DevOps Engineer & Team Lead<br>
+            DevOps Engineer & Product Owner<br>
             Deutsche Telekom AG
           </p>
         </div>

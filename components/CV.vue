@@ -26,7 +26,7 @@
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#e20074]"></span>
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
-              <h4 class="text-xl font-medium text-white">DevOps Engineer & Team Lead</h4>
+              <h4 class="text-xl font-medium text-white">DevOps Engineer & Product Owner</h4>
               <span class="text-white text-lg">Deutsche Telekom AG</span>
               <span class="text-white">Jan 2025 – Present</span>
             </div>
