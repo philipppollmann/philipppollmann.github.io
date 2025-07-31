@@ -240,6 +240,19 @@
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#009983]"></span>
             <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
+              <h4 class="text-xl font-medium text-white">Master in AI & Business Analytics</h4>
+              <span class="text-white text-lg">FOM University of Applied Sciences Cologne, Germany</span>
+              <span class="text-white">Sep 2025 - Feb 2028</span>
+            </div>
+            <p class="mt-2 text-white">
+              Focus: Artificial intelligence, mathematics, business requirements and MLOps
+            </p>
+          </div>
+
+          <!-- Education item -->
+          <div class="timeline-item relative pl-8 reveal-item">
+            <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#009983]"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4">
               <h4 class="text-xl font-medium text-white">Bachelor in Business Informatics</h4>
               <span class="text-white text-lg">FOM University of Applied Sciences Cologne, Germany</span>
               <span class="text-white">Oct 2021 - Dec 2024</span>
