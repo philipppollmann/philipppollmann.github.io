@@ -5,7 +5,6 @@
       <HeroSection id="home" />
       <AboutSection id="about" />
       <CV id="cv"/>
-      <SkillsSection id="skills" />
       <ProjectsSection id="projects" />
       <ContactSection id="contact" />
     </main>

@@ -33,32 +33,14 @@
             <p class="mt-2 text-white">
               Development of a cloud-independent Kubernetes platform. Implementation of CI/CD pipelines and automation of business processes.
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Terraform
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Kubernetes & Helm
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Docker
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Python
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Microsoft Azure
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Team Management
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #623CE4">Terraform</span>
+              <span class="skill-chip" style="--chip-color: #326ce5">Kubernetes &amp; Helm</span>
+              <span class="skill-chip" style="--chip-color: #2496ed">Docker</span>
+              <span class="skill-chip" style="--chip-color: #f7df1e">Python</span>
+              <span class="skill-chip" style="--chip-color: #0078d4">Microsoft Azure</span>
+              <span class="skill-chip" style="--chip-color: #8b5cf6">Team Management</span>
+            </div>
           </div>
 
           <!-- Dual Student Main Entry -->
@@ -84,24 +66,12 @@
             <p class="mt-2 text-white">
               Development of microservices and deployment on cloud platforms
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Microsoft Azure
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Python
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Kubernetes
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Docker
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #0078d4">Microsoft Azure</span>
+              <span class="skill-chip" style="--chip-color: #f7df1e">Python</span>
+              <span class="skill-chip" style="--chip-color: #326ce5">Kubernetes</span>
+              <span class="skill-chip" style="--chip-color: #2496ed">Docker</span>
+            </div>
           </div>
 
           <!-- Sub-Entry: Magyar Telekom -->
@@ -114,24 +84,12 @@
             <p class="mt-2 text-white">
               Development of microservices and deployment on cloud platforms
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                IoT Sensor Configuration
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Python
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Terraform
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Compliance & Security
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #10b981">IoT Sensor Configuration</span>
+              <span class="skill-chip" style="--chip-color: #f7df1e">Python</span>
+              <span class="skill-chip" style="--chip-color: #623CE4">Terraform</span>
+              <span class="skill-chip" style="--chip-color: #f59e0b">Compliance &amp; Security</span>
+            </div>
           </div>
 
           <!-- Sub-Entry: AWS Powerhouse -->
@@ -145,24 +103,12 @@
             <p class="mt-2 text-white">
               Development of microservices and deployment on cloud platforms
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                AWS
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Terraform
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Python & Django
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Docker
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #ff9900">AWS</span>
+              <span class="skill-chip" style="--chip-color: #623CE4">Terraform</span>
+              <span class="skill-chip" style="--chip-color: #f7df1e">Python &amp; Django</span>
+              <span class="skill-chip" style="--chip-color: #2496ed">Docker</span>
+            </div>
           </div>
 
           <!-- Sub-Entry: First GSUS Part -->
@@ -175,24 +121,12 @@
             <p class="mt-2 text-white">
               Development of microservices and deployment on cloud platforms
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                C#
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Python
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Power Bi
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Microsoft Azure
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #9B4993">C#</span>
+              <span class="skill-chip" style="--chip-color: #f7df1e">Python</span>
+              <span class="skill-chip" style="--chip-color: #F2C811">Power BI</span>
+              <span class="skill-chip" style="--chip-color: #0078d4">Microsoft Azure</span>
+            </div>
           </div>
 
           <!-- Timeline item -->
@@ -206,24 +140,12 @@
             <p class="mt-2 text-white">
               Basic understanding of programming languages like ruby and TypeScript
             </p>
-            <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Ruby
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                TypeScript
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                Docker
-              </li>
-              <li class="text-white flex items-center">
-                <span class="inline-block h-1 w-1 rounded-full bg-white mr-2"></span>
-                UI & UX Design
-              </li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="skill-chip" style="--chip-color: #CC342D">Ruby</span>
+              <span class="skill-chip" style="--chip-color: #3178c6">TypeScript</span>
+              <span class="skill-chip" style="--chip-color: #2496ed">Docker</span>
+              <span class="skill-chip" style="--chip-color: #e879f9">UI &amp; UX Design</span>
+            </div>
           </div>
         </div>
       </div>
@@ -512,6 +434,25 @@ export default {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid color-mix(in srgb, var(--chip-color, white) 35%, transparent);
+  background: color-mix(in srgb, var(--chip-color, white) 10%, transparent);
+  color: var(--chip-color, white) !important;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.skill-chip:hover {
+  background: color-mix(in srgb, var(--chip-color, white) 20%, transparent);
+  border-color: color-mix(in srgb, var(--chip-color, white) 60%, transparent);
 }
 
 .timeline-item, .timeline-subitem {

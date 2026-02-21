@@ -10,7 +10,6 @@
             <li><a href="#home" class="text-white hover:text-[#e20074] transition-colors">Home</a></li>
             <li><a href="#about" class="text-white hover:text-[#e20074] transition-colors">Über mich</a></li>
             <li><a href="#cv" class="text-white hover:text-[#e20074] transition-colors">CV</a></li>
-            <li><a href="#skills" class="text-white hover:text-[#e20074] transition-colors">Skills</a></li>
             <li><a href="#projects" class="text-white hover:text-[#e20074] transition-colors">Projekte</a></li>
             <li><a href="#contact" class="text-white hover:text-[#e20074] transition-colors">Kontakt</a></li>
           </ul>
@@ -45,7 +44,6 @@ const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'Über mich' },
   { id: 'cv', label: 'CV' },
-  { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projekte' },
   { id: 'contact', label: 'Kontakt' }
 ];
