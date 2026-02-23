@@ -5,7 +5,6 @@
       <HeroSection id="home" />
       <AboutSection id="about" />
       <CV id="cv"/>
-      <ProjectsSection id="projects" />
       <ContactSection id="contact" />
     </main>
 
@@ -88,9 +87,9 @@ useHead({
   --primary: #e20074;
   --secondary: #8d00ff;
   --accent: #009983;
-  --background: #0f0f0f;
-  --text-primary: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
+  --background: #ffffff;
+  --text-primary: #0f0f0f;
+  --text-secondary: rgba(0, 0, 0, 0.5);
   --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -128,16 +127,16 @@ a, button {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .page-enter-active,

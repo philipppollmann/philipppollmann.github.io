@@ -1,36 +1,37 @@
 <template>
-  <section id="about" class="py-20 px-4 bg-black">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center text-white tracking-tight">
-        About me
-      </h2>
-      <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 md:p-12 shadow-xl ring-1 ring-white/10">
-        <div class="flex flex-col md:flex-row items-center gap-10">
-          <div class="md:w-1/3 flex justify-center">
+  <section id="about" class="py-16 px-6 bg-[#f7f8fa]">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-10">
+        <p class="text-[#e20074] text-xs font-semibold tracking-[0.2em] uppercase mb-4">About me</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-[#0f0f0f] tracking-tight">Who I am</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+        <div class="md:col-span-2">
+          <div class="relative inline-block w-full max-w-[260px]">
             <img
-                src="https://avatars.githubusercontent.com/u/17802232?v=4"
-                alt="Philipp Pollmann"
-                class="w-48 h-48 rounded-full object-cover shadow-lg ring-2 ring-white/10"
+              src="https://avatars.githubusercontent.com/u/17802232?v=4"
+              alt="Philipp Pollmann"
+              class="w-full rounded-2xl object-cover aspect-square"
             />
+            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/8 pointer-events-none"></div>
           </div>
-          <div class="md:w-2/3 text-gray-300 text-lg space-y-5 leading-relaxed">
-            <p>
-              I am <span class="text-white font-semibold">23 years old</span> and work at
-              <span class="text-white font-semibold">Deutsche Telekom AG</span> in the
-              <span class="text-white font-semibold">Real Estate & Procurement</span> department.
-              In my role as <span class="text-white font-semibold">DevOps Engineer</span> and
-              <span class="text-white font-semibold">Product Owner</span> and I am responsible for the
-              development and operation of an <span class="text-white font-semibold">Azure-based Kubernetes platform</span>.
-            </p>
-            <p>
-              Together, we automate business processes by using
-              <span class="text-white font-semibold">microservice architectures</span> – with the aim of
-              strengthening <span class="text-white font-semibold">efficiency</span>,
-              <span class="text-white font-semibold">scalability</span> and
-              <span class="text-white font-semibold">innovative strength</span> within the Group through a platform that is
-              as <span class="text-white font-semibold">cloud-independent</span> as possible.
-            </p>
-          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-5 text-[#6b7280] text-lg leading-relaxed">
+          <p>
+            I'm <span class="text-[#0f0f0f] font-medium">Philipp Pollmann</span>, a DevOps Engineer and Product Owner at
+            <span class="text-[#0f0f0f] font-medium">Deutsche Telekom AG</span>, leading the development of a
+            <span class="text-[#0f0f0f] font-medium">cloud-independent Kubernetes platform</span> for Real Estate &amp; Procurement.
+          </p>
+          <p>
+            My focus is on <span class="text-[#0f0f0f] font-medium">microservice architectures</span>, CI/CD automation,
+            and infrastructure that scales — making enterprise systems faster, more resilient, and cloud-agnostic.
+          </p>
+          <p>
+            Currently pursuing a <span class="text-[#0f0f0f] font-medium">Master's in AI &amp; Business Analytics</span>
+            at FOM University, exploring the intersection of machine learning and operational excellence.
+          </p>
         </div>
       </div>
     </div>

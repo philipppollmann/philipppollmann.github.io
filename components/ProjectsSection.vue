@@ -1,17 +1,18 @@
 <template>
-  <section id="projects" class="py-16 px-4 bg-black">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold mb-12 text-center">Projects</h2>
+  <section id="projects" class="py-32 px-6 bg-[#f7f8fa]">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-16">
+        <p class="text-[#e20074] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Work</p>
+        <h2 class="text-4xl md:text-5xl font-bold text-[#0f0f0f] tracking-tight">Projects</h2>
+      </div>
 
-      <!-- Featured Project -->
       <FeaturedProject
           :title="featuredProject.title"
           :description="featuredProject.description"
           :gradient="featuredProject.gradient"
       />
 
-      <!-- Other Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectCard
             v-for="(project, index) in projects"
             :key="index"
@@ -49,7 +50,7 @@ export default {
         },
         {
           title: 'Smart-Home-Monitoring',
-          category: 'A terraform configuration for monitoring smart home devices using InfluxDB, Grafana and more services in a kubernetes cluster.',
+          category: 'A Terraform configuration for monitoring smart home devices using InfluxDB, Grafana and more services in a Kubernetes cluster.',
           gradient: 'from-green-500 to-teal-500'
         }
       ]

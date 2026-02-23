@@ -1,11 +1,17 @@
 <template>
-  <section id="contact" class="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Lets collaborate together</h2>
-      <p class="text-xl text-gray-300 mb-8">
-        Contact me via email or LinkedIn.
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-10">
+        <p class="text-[#e20074] text-xs font-semibold tracking-[0.2em] uppercase mb-4">Contact</p>
+        <h2 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+          <span class="text-[#0f0f0f]">Let's build</span><br>
+          <span class="text-black/20">something great.</span>
+        </h2>
+      </div>
+      <p class="text-[#9ca3af] text-lg mb-8 max-w-md leading-relaxed">
+        Open for collaborations, interesting projects, and conversations about cloud &amp; AI.
       </p>
-      <div class="flex flex-col md:flex-row justify-center gap-4">
+      <div class="flex flex-wrap gap-3">
         <MailButton/>
         <LinkedInButton/>
         <GitHubButton/>

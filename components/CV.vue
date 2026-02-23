@@ -1,5 +1,5 @@
 <template>
-  <section class="cv-section relative overflow-hidden bg-black text-white py-24 px-6">
+  <section class="cv-section relative overflow-hidden bg-white py-16 px-6">
     <div class="absolute inset-0">
       <div class="grid-overlay"></div>
       <div class="gradient-sphere gradient-sphere-1"></div>
@@ -7,20 +7,20 @@
     </div>
 
     <div class="max-w-5xl mx-auto relative z-10">
-      <div class="mb-16 overflow-hidden">
+      <div class="mb-10 overflow-hidden">
         <h2 class="text-5xl font-bold tracking-tight text-reveal text-white">CV</h2>
         <p class="mt-4 text-xl text-white max-w-2xl text-reveal-delayed">
           An overview of my professional career and my skills.
         </p>
       </div>
 
-      <div class="timeline-container mb-24">
+      <div class="timeline-container mb-12">
         <div class="timeline-header mb-10">
           <h3 class="text-2xl font-semibold text-white">Professional experience</h3>
           <div class="h-px w-full bg-gradient-to-r from-white to-transparent mt-2"></div>
         </div>
 
-        <div class="timeline-items space-y-16">
+        <div class="timeline-items space-y-8">
 
           <!-- GSUS DevOps Engineer-->
           <div class="timeline-item relative pl-8 reveal-item">
@@ -34,11 +34,23 @@
               Development of a cloud-independent Kubernetes platform. Implementation of CI/CD pipelines and automation of business processes.
             </p>
             <div class="mt-4 flex flex-wrap gap-2">
-              <span class="skill-chip" style="--chip-color: #623CE4">Terraform</span>
-              <span class="skill-chip" style="--chip-color: #326ce5">Kubernetes &amp; Helm</span>
+              <span class="skill-chip" style="--chip-color: #326ce5">Kubernetes</span>
               <span class="skill-chip" style="--chip-color: #2496ed">Docker</span>
-              <span class="skill-chip" style="--chip-color: #f7df1e">Python</span>
+              <span class="skill-chip" style="--chip-color: #0F1689">Helm</span>
+              <span class="skill-chip" style="--chip-color: #EF7B4D">ArgoCD</span>
+              <span class="skill-chip" style="--chip-color: #623CE4">Terraform</span>
+              <span class="skill-chip" style="--chip-color: #42b883">Vue.js</span>
+              <span class="skill-chip" style="--chip-color: #00DC82">Nuxt.js</span>
+              <span class="skill-chip" style="--chip-color: #3178c6">TypeScript</span>
+              <span class="skill-chip" style="--chip-color: #24A1C8">Traefik</span>
+              <span class="skill-chip" style="--chip-color: #0194E2">MLflow</span>
+              <span class="skill-chip" style="--chip-color: #F46800">Grafana</span>
+              <span class="skill-chip" style="--chip-color: #E6522C">Prometheus</span>
               <span class="skill-chip" style="--chip-color: #0078d4">Microsoft Azure</span>
+              <span class="skill-chip" style="--chip-color: #25c2a0">Docusaurus</span>
+              <span class="skill-chip" style="--chip-color: #9BF0E1">Spotify Backstage</span>
+              <span class="skill-chip" style="--chip-color: #29B5E8">Snowflake</span>
+              <span class="skill-chip" style="--chip-color: #0075A8">Rancher</span>
               <span class="skill-chip" style="--chip-color: #8b5cf6">Team Management</span>
             </div>
           </div>
@@ -157,7 +169,7 @@
           <div class="h-px w-full bg-gradient-to-r from-white to-transparent mt-2"></div>
         </div>
 
-        <div class="timeline-items space-y-16">
+        <div class="timeline-items space-y-8">
           <!-- Education item -->
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#009983]"></span>
@@ -200,12 +212,12 @@
       </div>
 
       <!-- Certifications section -->
-      <div class="certification-container mt-24">
+      <div class="certification-container mt-12">
         <div class="timeline-header mb-10">
           <h3 class="text-2xl font-semibold text-white">Certifications</h3>
           <div class="h-px w-full bg-gradient-to-r from-white to-transparent mt-2"></div>
         </div>
-        <div class="timeline-items space-y-16">
+        <div class="timeline-items space-y-8">
           <!-- Certification item -->
           <div class="timeline-item relative pl-8 reveal-item">
             <span class="absolute left-0 top-1 h-4 w-4 rounded-full bg-[#ff9900]"></span>
@@ -268,7 +280,7 @@ export default {
 }
 
 .cv-section * {
-  color: white !important; /* Alle Texte im CV-Bereich weiß machen */
+  color: #0f0f0f !important;
 }
 
 .grid-overlay {
@@ -277,8 +289,8 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
 }
@@ -293,7 +305,7 @@ export default {
 .gradient-sphere-1 {
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.6) 0%, rgba(17, 24, 39, 0) 70%);
+  background: radial-gradient(circle, rgba(226, 0, 116, 0.07) 0%, rgba(255, 255, 255, 0) 70%);
   top: -100px;
   right: -100px;
   animation: float 20s infinite alternate ease-in-out;
@@ -302,7 +314,7 @@ export default {
 .gradient-sphere-2 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.6) 0%, rgba(17, 24, 39, 0) 70%);
+  background: radial-gradient(circle, rgba(141, 0, 255, 0.06) 0%, rgba(255, 255, 255, 0) 70%);
   bottom: -100px;
   left: -100px;
   animation: float 25s infinite alternate-reverse ease-in-out;
@@ -377,7 +389,7 @@ export default {
   top: 10px;
   bottom: -32px;
   width: 1px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .timeline-item:last-child::before {
@@ -391,7 +403,7 @@ export default {
   top: 10px;
   bottom: -32px;
   width: 1px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .timeline-subitem:last-child::before {
@@ -405,7 +417,7 @@ export default {
   left: 2px;
   width: 7px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 640px) {
@@ -443,16 +455,16 @@ export default {
   border-radius: 9999px;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid color-mix(in srgb, var(--chip-color, white) 35%, transparent);
-  background: color-mix(in srgb, var(--chip-color, white) 10%, transparent);
-  color: var(--chip-color, white) !important;
+  border: 1px solid color-mix(in srgb, var(--chip-color, #6b7280) 30%, transparent);
+  background: color-mix(in srgb, var(--chip-color, #6b7280) 8%, transparent);
+  color: var(--chip-color, #6b7280) !important;
   transition: background 0.2s ease, border-color 0.2s ease;
   white-space: nowrap;
 }
 
 .skill-chip:hover {
-  background: color-mix(in srgb, var(--chip-color, white) 20%, transparent);
-  border-color: color-mix(in srgb, var(--chip-color, white) 60%, transparent);
+  background: color-mix(in srgb, var(--chip-color, #6b7280) 15%, transparent);
+  border-color: color-mix(in srgb, var(--chip-color, #6b7280) 50%, transparent);
 }
 
 .timeline-item, .timeline-subitem {

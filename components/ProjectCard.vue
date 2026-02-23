@@ -1,11 +1,7 @@
 <template>
-  <div class="rounded-3xl overflow-hidden bg-gray-900 hover:scale-105 transition-transform">
-    <div :class="`aspect-video bg-gradient-to-r ${gradient}`"></div>
-    <div class="p-6">
-      <h3 class="text-xl font-bold mb-2">{{ title }}</h3>
-      <p class="text-gray-400 mb-4">{{ category }}</p>
-      <a href="#" class="text-blue-400 hover:text-blue-300">Details →</a>
-    </div>
+  <div class="rounded-2xl border border-black/8 bg-white p-6 hover:border-black/14 hover:shadow-sm transition-all duration-300">
+    <h3 class="text-lg font-semibold text-[#0f0f0f] mb-2 tracking-tight">{{ title }}</h3>
+    <p class="text-[#9ca3af] text-sm leading-relaxed">{{ category }}</p>
   </div>
 </template>
 
@@ -13,18 +9,9 @@
 export default {
   name: 'ProjectCard',
   props: {
-    title: {
-      type: String,
-      required: true
-    },
-    category: {
-      type: String,
-      required: true
-    },
-    gradient: {
-      type: String,
-      required: true
-    }
+    title: { type: String, required: true },
+    category: { type: String, required: true },
+    gradient: { type: String, required: true }
   }
 }
 </script>
