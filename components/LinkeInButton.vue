@@ -39,9 +39,9 @@ export default {
   gap: 10px;
   padding: 12px 22px;
   border-radius: 9999px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-soft);
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
@@ -53,15 +53,14 @@ export default {
 }
 
 .contact-btn:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.06);
-  color: rgba(0, 0, 0, 0.8);
+  border-color: var(--ink-soft);
+  color: var(--ink);
   transform: translateY(-1px);
 }
 
 .contact-btn.is-pressed {
   transform: scale(0.97);
-  background: rgba(0, 0, 0, 0.02);
+  background: var(--bg-tint);
 }
 
 .btn-icon {

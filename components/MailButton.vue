@@ -37,12 +37,13 @@ export default {
   gap: 10px;
   padding: 12px 22px;
   border-radius: 9999px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background: rgba(0, 0, 0, 0.03);
-  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  background: var(--ink);
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
+  box-shadow: 0 8px 22px rgba(33, 31, 28, 0.18);
   transition: all 0.2s ease;
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -51,15 +52,14 @@ export default {
 }
 
 .contact-btn:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 0, 0.06);
-  color: rgba(0, 0, 0, 0.8);
+  background: #000;
   transform: translateY(-1px);
+  box-shadow: 0 11px 28px rgba(33, 31, 28, 0.26);
 }
 
 .contact-btn.is-pressed {
   transform: scale(0.97);
-  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 12px rgba(33, 31, 28, 0.2);
 }
 
 .btn-icon {

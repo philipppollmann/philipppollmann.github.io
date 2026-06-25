@@ -5,6 +5,7 @@
 .nitro
 .idea/philipppollmann.github.io.iml
 .cache
+.claude
 dist
 .vscode
 .DS_Store

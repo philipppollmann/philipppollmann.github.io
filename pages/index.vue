@@ -1,10 +1,12 @@
 <template>
-  <div class="min-h-screen bg-black text-white font-sans">
+  <div class="min-h-screen site-bg text-ink font-sans">
 
     <main>
       <HeroSection id="home" />
       <AboutSection id="about" />
       <CV id="cv"/>
+      <TechStack id="stack" />
+      <HobbiesSection id="life" />
       <ContactSection id="contact" />
     </main>
 
@@ -12,9 +14,9 @@
     <button
       v-show="showScrollButton"
       @click="scrollToTop"
-      class="fixed right-6 bottom-6 bg-[#e20074] hover:bg-[#bc005f] z-50 p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
-      <span class="sr-only">Nach oben scrollen</span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      class="scroll-top fixed right-6 bottom-6 z-50 p-3 rounded-full transition-all duration-300 hover:-translate-y-0.5">
+      <span class="sr-only">Scroll to top</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
       </svg>
     </button>
@@ -48,14 +50,14 @@ onUnmounted(() => {
 
 useHead({
   htmlAttrs: {
-    lang: 'de'
+    lang: 'en'
   },
   title: 'Philipp Pollmann',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'description', content: 'Personal website of Philipp Pollmann - Developer, Designer and Innovator' },
-    { name: 'theme-color', content: '#000000' },
+    { name: 'theme-color', content: '#faf8f4' },
     { property: 'og:title', content: 'Philipp Pollmann' },
     { property: 'og:description', content: 'Personal website of Philipp Pollmann - Developer, Designer and Innovator' },
     { property: 'og:type', content: 'website' },
@@ -73,7 +75,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap',
       media: 'print',
       onload: "this.media='all'"
     },
@@ -84,33 +86,78 @@ useHead({
 
 <style>
 :root {
-  --primary: #e20074;
-  --secondary: #8d00ff;
-  --accent: #009983;
-  --background: #ffffff;
-  --text-primary: #0f0f0f;
-  --text-secondary: rgba(0, 0, 0, 0.5);
-  --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --bg: #fcfbf9;
+  --bg-tint: #f4efe8;
+  --surface: #ffffff;
+  --ink: #211f1c;
+  --ink-soft: #6e685f;
+  --ink-faint: #9a9388;
+  --line: #e9e2d7;
+
+  /* primary accent — warm coral/terracotta */
+  --accent: #d65a3c;
+  --accent-ink: #b8482d;
+  --accent-soft: #fae8e1;
+
+  /* curated multi-accent palette (used purposefully, Google-style) */
+  --c-coral: #e0654a;  --c-coral-soft: #fae6df;
+  --c-amber: #e2a23a;  --c-amber-soft: #fbeed4;
+  --c-teal:  #2f9e87;  --c-teal-soft:  #d8efe9;
+  --c-blue:  #4f86c6;  --c-blue-soft:  #e1ebf6;
+  --c-plum:  #b1557f;  --c-plum-soft:  #f4e2ec;
+  --c-red:   #cf4436;  --c-red-soft:   #fae0dc;
+
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 body {
-  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: var(--background);
-  color: var(--text-primary);
-  line-height: 1.6;
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* subtle editorial paper grain */
+.site-bg {
+  background-color: var(--bg);
+  position: relative;
+}
+.site-bg::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.text-ink { color: var(--ink); }
+
+h1, h2, h3, h4 {
+  font-family: "DM Sans", -apple-system, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
-}
-
-.rounded-3xl {
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
-
-.rounded-3xl:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  scroll-padding-top: 5rem;
 }
 
 a, button {
@@ -118,69 +165,35 @@ a, button {
 }
 
 :focus-visible {
-  outline: 3px solid var(--primary);
-  outline-offset: 2px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
+.scroll-top {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(33, 31, 28, 0.08);
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+.scroll-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background: #dcd3c6;
+  border-radius: 6px;
+  border: 2px solid var(--bg);
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
+::-webkit-scrollbar-thumb:hover { background: #c9beac; }
 
 .page-enter-active,
-.page-leave-active {
-  transition: opacity 0.3s;
-}
+.page-leave-active { transition: opacity 0.3s; }
 .page-enter,
-.page-leave-to {
-  opacity: 0;
-}
-
-@media (max-width: 640px) {
-  :root {
-    --section-padding: 3rem 1rem;
-  }
-
-  body {
-    font-size: 0.95rem;
-  }
-
-  h1 {
-    font-size: 2.5rem !important;
-  }
-
-  h2 {
-    font-size: 1.75rem !important;
-  }
-
-  h3 {
-    font-size: 1.25rem !important;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  :root {
-    --section-padding: 4rem 2rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  :root {
-    --section-padding: 5rem 3rem;
-  }
-}
+.page-leave-to { opacity: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -188,16 +201,6 @@ a, button {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .bg-black {
-    background-color: #000;
-  }
-
-  .text-white {
-    color: #fff;
   }
 }
 </style>
