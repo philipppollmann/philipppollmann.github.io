@@ -6,6 +6,7 @@
       <AboutSection id="about" />
       <CV id="cv"/>
       <TechStack id="stack" />
+      <ProjectsSection id="projects" />
       <HobbiesSection id="life" />
       <ContactSection id="contact" />
     </main>
@@ -56,12 +57,12 @@ useHead({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { name: 'description', content: 'Personal website of Philipp Pollmann - Developer, Designer and Innovator' },
-    { name: 'theme-color', content: '#faf8f4' },
+    { name: 'description', content: 'Philipp Pollmann — Product Owner & Platform Engineer at Deutsche Telekom. Internal developer platforms and open-source AI on Kubernetes.' },
+    { name: 'theme-color', content: '#fafafa' },
     { property: 'og:title', content: 'Philipp Pollmann' },
-    { property: 'og:description', content: 'Personal website of Philipp Pollmann - Developer, Designer and Innovator' },
+    { property: 'og:description', content: 'Product Owner & Platform Engineer at Deutsche Telekom. Internal developer platforms and open-source AI on Kubernetes.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://philipppollmann.de' }
+    { property: 'og:url', content: 'https://philipp.pollmann.rocks' }
   ],
   link: [
     {
@@ -86,28 +87,29 @@ useHead({
 
 <style>
 :root {
-  --bg: #fcfbf9;
-  --bg-tint: #f4efe8;
+  --bg: #fafafa;
+  --bg-tint: #f1f1ef;
   --surface: #ffffff;
-  --ink: #211f1c;
-  --ink-soft: #6e685f;
-  --ink-faint: #9a9388;
-  --line: #e9e2d7;
+  --ink: #161616;
+  --ink-soft: #5c5c58;
+  --ink-faint: #8c8c86;
+  --line: #e6e6e2;
 
-  /* primary accent — warm coral/terracotta */
-  --accent: #d65a3c;
-  --accent-ink: #b8482d;
-  --accent-soft: #fae8e1;
+  /* primary accent — restrained tech blue */
+  --accent: #2563eb;
+  --accent-ink: #1d4fc4;
+  --accent-soft: #e8eefc;
 
   /* curated multi-accent palette (used purposefully, Google-style) */
   --c-coral: #e0654a;  --c-coral-soft: #fae6df;
-  --c-amber: #e2a23a;  --c-amber-soft: #fbeed4;
-  --c-teal:  #2f9e87;  --c-teal-soft:  #d8efe9;
-  --c-blue:  #4f86c6;  --c-blue-soft:  #e1ebf6;
-  --c-plum:  #b1557f;  --c-plum-soft:  #f4e2ec;
+  --c-amber: #dd9b33;  --c-amber-soft: #faeed6;
+  --c-teal:  #199a80;  --c-teal-soft:  #d8efe9;
+  --c-blue:  #2563eb;  --c-blue-soft:  #e1ebf6;
+  --c-plum:  #a04f96;  --c-plum-soft:  #f2e2f0;
   --c-red:   #cf4436;  --c-red-soft:   #fae0dc;
 
-  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* smooth deceleration, no overshoot — crisper motion */
+  --spring: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 body {
@@ -119,19 +121,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* subtle editorial paper grain */
 .site-bg {
   background-color: var(--bg);
   position: relative;
-}
-.site-bg::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.02;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .text-ink { color: var(--ink); }
@@ -148,6 +140,12 @@ h1, h2, h3, h4 {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent);
+}
+
+.eyebrow .no {
+  opacity: 0.55;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.6em;
 }
 
 ::selection {
@@ -184,11 +182,11 @@ a, button {
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb {
-  background: #dcd3c6;
+  background: #d2d2ce;
   border-radius: 6px;
   border: 2px solid var(--bg);
 }
-::-webkit-scrollbar-thumb:hover { background: #c9beac; }
+::-webkit-scrollbar-thumb:hover { background: #bcbcb6; }
 
 .page-enter-active,
 .page-leave-active { transition: opacity 0.3s; }

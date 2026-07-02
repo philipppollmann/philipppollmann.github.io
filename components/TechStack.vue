@@ -3,7 +3,7 @@
     <div class="stack-aura" aria-hidden="true"></div>
     <div class="relative max-w-5xl mx-auto">
       <div class="reveal mb-14 md:mb-16">
-        <p class="eyebrow" style="color: var(--c-blue)">What I work with</p>
+        <p class="eyebrow" style="color: var(--c-blue)"><span class="no">03</span>What I work with</p>
         <h2 class="mt-4 text-4xl md:text-5xl text-[var(--ink)] leading-tight">My toolbox</h2>
         <p class="mt-5 text-lg text-[var(--ink-soft)] max-w-2xl">
           The technologies I reach for day to day — grouped by where they live in my work.
@@ -95,7 +95,7 @@ export default {
     radial-gradient(38% 46% at 60% 60%, color-mix(in srgb, var(--c-blue) 34%, transparent) 0%, transparent 72%),
     radial-gradient(34% 42% at 18% 64%, color-mix(in srgb, var(--c-amber) 26%, transparent) 0%, transparent 72%);
   filter: blur(56px);
-  opacity: 0.55;
+  opacity: 0.3;
   animation: saura 24s ease-in-out infinite alternate;
 }
 
@@ -111,7 +111,7 @@ export default {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--line);
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   padding: 1.8rem;
   transition: border-color 0.3s ease, transform 0.4s var(--spring), box-shadow 0.3s ease;
 }

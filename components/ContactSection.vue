@@ -2,7 +2,7 @@
   <section id="contact" class="relative overflow-hidden py-28 md:py-40 px-6">
     <div class="contact-aura" aria-hidden="true"></div>
     <div class="relative max-w-3xl mx-auto text-center">
-      <p class="eyebrow reveal" style="color: var(--c-plum)">Get in touch</p>
+      <p class="eyebrow reveal" style="color: var(--c-plum)"><span class="no">06</span>Get in touch</p>
       <h2 class="reveal mt-5 text-4xl md:text-6xl font-medium text-[var(--ink)] leading-[1.08]">
         Let's make something<br>
         <span class="italic font-normal accent-word">thoughtful</span> together.
@@ -11,7 +11,10 @@
         Always happy to talk about cloud, platforms, AI — or just trade coffee tips.
         Drop me a line and I'll get back to you.
       </p>
-      <div class="reveal mt-10 flex flex-wrap justify-center gap-3">
+      <a href="mailto:contact@philipppollmann.de" class="big-mail reveal mt-9 inline-block">
+        contact@philipppollmann.de
+      </a>
+      <div class="reveal mt-9 flex flex-wrap justify-center gap-3">
         <MailButton/>
         <LinkedInButton/>
         <GitHubButton/>
@@ -52,12 +55,11 @@ export default {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(30% 46% at 26% 38%, color-mix(in srgb, var(--c-plum) 52%, transparent) 0%, transparent 70%),
-    radial-gradient(32% 46% at 68% 32%, color-mix(in srgb, var(--c-coral) 50%, transparent) 0%, transparent 70%),
-    radial-gradient(34% 46% at 82% 64%, color-mix(in srgb, var(--c-amber) 44%, transparent) 0%, transparent 72%),
-    radial-gradient(34% 48% at 44% 76%, color-mix(in srgb, var(--c-blue) 40%, transparent) 0%, transparent 72%);
-  filter: blur(48px);
-  opacity: 0.85;
+    radial-gradient(30% 46% at 26% 38%, color-mix(in srgb, var(--c-plum) 34%, transparent) 0%, transparent 70%),
+    radial-gradient(32% 46% at 68% 32%, color-mix(in srgb, var(--c-blue) 34%, transparent) 0%, transparent 70%),
+    radial-gradient(34% 48% at 44% 76%, color-mix(in srgb, var(--c-teal) 26%, transparent) 0%, transparent 72%);
+  filter: blur(52px);
+  opacity: 0.5;
   animation: caura 20s ease-in-out infinite alternate;
 }
 
@@ -68,6 +70,24 @@ export default {
 
 @media (prefers-reduced-motion: reduce) {
   .contact-aura { animation: none; }
+}
+
+.big-mail {
+  font-size: clamp(1.25rem, 3.4vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  background-image: linear-gradient(90deg, var(--accent), var(--c-plum));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  padding-bottom: 4px;
+  transition: background-size 0.45s var(--spring), color 0.2s ease;
+}
+
+.big-mail:hover {
+  color: var(--accent-ink);
+  background-size: 100% 2px;
 }
 
 .accent-word {

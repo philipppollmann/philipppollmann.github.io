@@ -2,7 +2,7 @@
   <section class="cv-section relative py-24 md:py-32 px-6">
     <div class="max-w-4xl mx-auto relative">
       <div class="mb-16 reveal-item">
-        <p class="eyebrow">Career</p>
+        <p class="eyebrow"><span class="no">02</span>Career</p>
         <h2 class="mt-4 text-4xl md:text-5xl font-medium text-[var(--ink)] leading-tight">Experience &amp; education</h2>
         <p class="mt-5 text-lg text-[var(--ink-soft)] max-w-2xl">
           A look at where I've worked, what I've studied, and the things I've built along the way.
@@ -355,6 +355,58 @@ export default {
   .timeline-subitem::before { left: 4.5px; }
   .timeline-subdot { left: 0; }
   .entry-title { font-size: 1.2rem; }
+}
+
+/* editorial two-column timeline: date left, rail center, content right */
+@media (min-width: 768px) {
+  .timeline-item,
+  .timeline-subitem {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    column-gap: 3.5rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .timeline-date {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    padding-top: 0.45rem;
+  }
+
+  .entry-title, .sub-title, .entry-org, .entry-text, .chips {
+    grid-column: 2;
+  }
+
+  .entry-title { margin-top: 0; }
+  .sub-title { margin-top: 0; }
+
+  .timeline-subitem .sub-title,
+  .timeline-subitem .entry-text,
+  .timeline-subitem .chips {
+    padding-left: 1.75rem;
+  }
+
+  .timeline-dot {
+    left: calc(8.5rem + 1.75rem - 6px);
+    top: 12px;
+  }
+
+  .timeline-subdot {
+    left: calc(8.5rem + 1.75rem - 4.5px);
+    top: 12px;
+  }
+
+  .timeline-item::before,
+  .timeline-subitem::before {
+    left: calc(8.5rem + 1.75rem - 0.5px);
+    top: 28px;
+    bottom: -2.5rem;
+  }
+
+  .timeline-item:last-child::before,
+  .timeline-subitem:last-child::before { content: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

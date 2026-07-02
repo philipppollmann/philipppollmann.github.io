@@ -2,7 +2,7 @@
   <section id="about" class="relative py-24 md:py-32 px-6">
     <div class="max-w-5xl mx-auto">
       <div class="reveal mb-14 md:mb-16">
-        <p class="eyebrow" style="color: var(--c-teal)">About</p>
+        <p class="eyebrow" style="color: var(--c-teal)"><span class="no">01</span>About</p>
         <h2 class="mt-4 text-4xl md:text-5xl font-medium text-[var(--ink)] leading-tight">
           A bit about me
         </h2>
@@ -87,15 +87,15 @@ export default {
 .fact-card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   padding: 0.5rem 1.75rem;
-  box-shadow: 0 18px 44px rgba(33, 31, 28, 0.06);
+  box-shadow: 0 1px 2px rgba(22, 22, 22, 0.04), 0 12px 32px rgba(22, 22, 22, 0.05);
   transition: transform 0.4s var(--spring), box-shadow 0.3s ease;
 }
 
 .fact-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(33, 31, 28, 0.09);
+  transform: translateY(-3px);
+  box-shadow: 0 1px 2px rgba(22, 22, 22, 0.04), 0 16px 36px rgba(22, 22, 22, 0.08);
 }
 
 .fact-row dd {

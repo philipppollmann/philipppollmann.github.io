@@ -2,7 +2,7 @@
   <section id="life" class="relative py-24 md:py-32 px-6 life-bg">
     <div class="max-w-5xl mx-auto">
       <div class="reveal mb-14 md:mb-16">
-        <p class="eyebrow" style="color: var(--c-amber)">Beyond work</p>
+        <p class="eyebrow" style="color: var(--c-amber)"><span class="no">05</span>Beyond work</p>
         <h2 class="mt-4 text-4xl md:text-5xl text-[var(--ink)] leading-tight">Off the clock</h2>
         <p class="mt-5 text-lg text-[var(--ink-soft)] max-w-2xl">
           The things that keep me curious and balanced when I step away from the keyboard.
@@ -161,7 +161,7 @@ export default {
   overflow: hidden;
   background: color-mix(in srgb, var(--c, var(--accent)) 6%, var(--surface));
   border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 18%, var(--line));
-  border-radius: 2rem;
+  border-radius: 1.25rem;
   padding: 1.9rem;
   transition: border-color 0.3s ease, transform 0.4s var(--spring), box-shadow 0.3s ease;
 }

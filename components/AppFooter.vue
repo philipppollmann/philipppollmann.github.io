@@ -15,6 +15,7 @@
             <li><a href="#about" class="footer-link">About</a></li>
             <li><a href="#cv" class="footer-link">CV</a></li>
             <li><a href="#stack" class="footer-link">Stack</a></li>
+            <li><a href="#projects" class="footer-link">Open Source</a></li>
             <li><a href="#life" class="footer-link">Life</a></li>
             <li><a href="#contact" class="footer-link">Contact</a></li>
           </ul>

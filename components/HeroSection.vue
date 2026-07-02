@@ -3,7 +3,7 @@
     <!-- soft pastel gradient backdrop -->
     <div class="hero-aura" aria-hidden="true"></div>
 
-    <div class="max-w-6xl mx-auto px-6 pt-40 pb-28 lg:pt-48 lg:pb-36">
+    <div class="max-w-6xl mx-auto px-6 pt-40 pb-20 lg:pt-48 lg:pb-24">
       <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-16 lg:gap-20 items-center">
 
         <!-- Text -->
@@ -15,7 +15,7 @@
 
           <h1 class="mt-8 text-[3.6rem] md:text-7xl lg:text-[6rem] font-bold leading-[0.98] tracking-[-0.03em] text-[var(--ink)]">
             Philipp<br>
-            <span style="color: var(--accent)">Pollmann</span>
+            <span class="name-grad">Pollmann</span>
           </h1>
 
           <p class="mt-8 text-lg md:text-xl text-[var(--ink-soft)] max-w-xl leading-relaxed">
@@ -45,6 +45,8 @@
 
         <!-- Portrait -->
         <div class="reveal relative mx-auto lg:mx-0 w-fit" style="transition-delay: .12s">
+          <span class="float-shape float-shape--amber" aria-hidden="true"></span>
+          <span class="float-shape float-shape--teal" aria-hidden="true"></span>
           <div class="portrait-arch-bg"></div>
           <div class="portrait-arch">
             <img
@@ -57,11 +59,27 @@
 
       </div>
     </div>
+
+    <!-- tech marquee -->
+    <div class="marquee reveal" aria-hidden="true">
+      <div class="marquee-track">
+        <span v-for="n in 2" :key="n" class="marquee-group">
+          <span v-for="item in marqueeItems" :key="item + n" class="marquee-item">
+            {{ item }}<i class="marquee-star">✦</i>
+          </span>
+        </span>
+      </div>
+    </div>
   </section>
 </template>
 
 <script setup>
 import { onMounted } from 'vue';
+
+const marqueeItems = [
+  'Kubernetes', 'GitOps', 'ArgoCD', 'Terraform', 'Spotify Backstage',
+  'vLLM', 'Open-source LLMs', 'Kyverno', 'Grafana', 'Vue & Nuxt', 'Platform Engineering'
+];
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
@@ -74,6 +92,96 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.name-grad {
+  background-image: linear-gradient(105deg, var(--c-blue), var(--c-plum), var(--c-teal), var(--c-blue));
+  background-size: 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: nameShift 9s ease-in-out infinite;
+}
+
+@keyframes nameShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.float-shape {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.float-shape--amber {
+  top: -26px;
+  right: -30px;
+  width: 74px;
+  height: 74px;
+  background: var(--c-blue);
+  opacity: 0.4;
+  border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
+  animation: floatA 7s ease-in-out infinite;
+}
+
+.float-shape--teal {
+  bottom: -20px;
+  left: -36px;
+  width: 56px;
+  height: 56px;
+  background: var(--c-teal);
+  opacity: 0.35;
+  border-radius: 45% 55% 48% 52% / 55% 45% 55% 45%;
+  animation: floatB 9s ease-in-out infinite;
+}
+
+.marquee {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 36s linear infinite;
+}
+
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.marquee-group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.marquee-star {
+  font-style: normal;
+  font-size: 0.6rem;
+  color: var(--accent);
+  opacity: 0.7;
+  margin: 0 1.6rem;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .dot {
   width: 7px;
   height: 7px;
@@ -133,27 +241,26 @@ onMounted(() => {
   position: relative;
   width: 320px;
   height: 400px;
-  border-radius: 2.75rem;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(33, 31, 28, 0.16);
+  box-shadow: 0 1px 2px rgba(22, 22, 22, 0.06), 0 24px 48px rgba(22, 22, 22, 0.14);
   z-index: 2;
 }
 
 .portrait-arch-bg {
   position: absolute;
-  top: 22px;
-  left: 22px;
+  top: 18px;
+  left: 18px;
   width: 320px;
   height: 400px;
-  border-radius: 2.75rem;
-  background: linear-gradient(150deg, var(--c-coral), var(--c-plum));
-  opacity: 0.5;
-  filter: blur(2px);
+  border-radius: 1.5rem;
+  background: linear-gradient(150deg, var(--c-blue), var(--c-plum));
+  opacity: 0.35;
   z-index: 1;
 }
 
 @media (min-width: 1024px) {
-  .portrait-arch, .portrait-arch-bg { width: 360px; height: 450px; border-radius: 3rem; }
+  .portrait-arch, .portrait-arch-bg { width: 360px; height: 450px; border-radius: 1.5rem; }
 }
 
 /* large soft flowing aurora — the Wispr signature */
@@ -166,13 +273,11 @@ onMounted(() => {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(30% 36% at 28% 28%, color-mix(in srgb, var(--c-coral) 70%, transparent) 0%, transparent 68%),
-    radial-gradient(32% 38% at 62% 16%, color-mix(in srgb, var(--c-amber) 66%, transparent) 0%, transparent 68%),
-    radial-gradient(36% 42% at 80% 50%, color-mix(in srgb, var(--c-plum) 62%, transparent) 0%, transparent 70%),
-    radial-gradient(36% 42% at 46% 72%, color-mix(in srgb, var(--c-blue) 56%, transparent) 0%, transparent 70%),
-    radial-gradient(32% 40% at 20% 64%, color-mix(in srgb, var(--c-teal) 48%, transparent) 0%, transparent 70%);
-  filter: blur(50px);
-  opacity: 0.92;
+    radial-gradient(32% 38% at 62% 16%, color-mix(in srgb, var(--c-blue) 42%, transparent) 0%, transparent 68%),
+    radial-gradient(36% 42% at 80% 50%, color-mix(in srgb, var(--c-plum) 36%, transparent) 0%, transparent 70%),
+    radial-gradient(36% 42% at 46% 72%, color-mix(in srgb, var(--c-teal) 30%, transparent) 0%, transparent 70%);
+  filter: blur(56px);
+  opacity: 0.5;
   animation: aura 22s ease-in-out infinite alternate;
 }
 
@@ -183,7 +288,7 @@ onMounted(() => {
 }
 
 @media (max-width: 1023px) {
-  .hero-aura { width: 130%; right: -25%; top: -12%; height: 90%; opacity: 0.6; }
+  .hero-aura { width: 130%; right: -25%; top: -12%; height: 90%; opacity: 0.35; }
 }
 
 @keyframes floatA {
@@ -209,6 +314,6 @@ onMounted(() => {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; }
-  .hero-aura { animation: none; }
+  .hero-aura, .name-grad, .float-shape, .marquee-track { animation: none; }
 }
 </style>
